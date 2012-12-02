@@ -1,0 +1,7 @@
+permalink: /:year-:month-:day-:title.html
+paginate: 5
+title: Sebastian Teumert | Blog
+description: personal tech / dev blog - blogging about java, php, git jekyll and more - read about me and my software projects
+url: http://teumert.net/
+author: Sebastian Teumert
+exclude: [makefile, README.md, LICENSE]

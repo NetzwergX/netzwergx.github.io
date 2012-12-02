@@ -1,0 +1,93 @@
+---
+layout: article
+---
+
+{{ content }}
+
+<script type="text/javascript">
+
+$.fn.replaceText = function( search, replace, text_only ) {
+    return this.each(function(){
+      var node = this.firstChild,
+        val,
+        new_val,
+        remove = [];
+      if ( node ) {
+        do {
+          if ( node.nodeType === 3 ) {
+        	 // console.log("scheidenpilz");
+            val = node.nodeValue;
+            //console.log(node);
+            new_val = val.replace( search, replace );
+            if ( new_val !== val ) {
+              if ( !text_only && /</.test( new_val ) ) {
+                $(node).before( new_val );
+                remove.push( node );
+              } else {
+                node.nodeValue = new_val;
+              }
+            }
+          }
+          else {
+        	  console.log("moppelkotze");
+        	  console.log(node.childNodes.length);
+        	  console.log(node);
+        	  for(i = node.childNodes.length; i < 0; i--) {
+        		  node.childNodes[i].replaceText(search, replace);
+        		 
+        	  }
+          }
+        } while ( node = node.nextSibling );
+      }
+      remove.length && $(remove).remove();
+    });
+  };  
+
+
+$(document).ready(function(){    
+    var ref = $.url(document./*referrer*/location);  
+    
+    $("#main article").replaceText('posts', "äppel");
+    
+    searchEngineParams = [
+    		'q', 		// google, msn, altavista
+    		'p', 		// yahoo
+    		'query', 	// lycos, fireball
+    		'eingabe',	// metager
+    		'begriff',	// acoon.de
+    		'keyword',	// fixx.de
+    		'search',	// excite.co.jp
+    		'highlight',	// burning board and other bulletin board systems ;)
+    		
+    		// ???:
+    		'ask',
+    		'searchfor',
+    		'key',
+    		'keywords',
+    		'qry',
+    		'searchitem',
+    		'kwd',
+    		'recherche',
+    		'search_text',
+    		'search_term',
+    		'term',
+    		'terms',
+    		'qq',
+    		'qry_str',
+    		'qu',
+    		//'s',
+    		//'k',
+    		//'t',
+    		'va'
+    ];   
+    
+    for(param in searchEngineParams) { 
+    	//console.log(param);
+    	var highlight = ref.param(searchEngineParams[param]);
+    	if(typeof highlight == 'undefined')
+    		continue;
+    	console.log(highlight);    	
+		$("#main article").replaceText(highlight, '<span class="highlight" style="color:red;"> ' + highlight + '</span>', false);
+    }
+});
+</script>
