@@ -8,10 +8,10 @@ author: Sebastian Teumert
 ---
 My solution is based around the fact that there are several math filters available for Liquid:
 	<pre>
-		{% raw %}{{5 | plus: 3}}{% endraw %} => 8
-		{% raw %}{{5 | minus: 3}}{% endraw %} => 2
-		{% raw %}{{5 | times: 3}}{% endraw %} => 15
-		{% raw %}{{6 | divided_by: 3}}{% endraw %} => 2
+		{% literal %}{{5 | plus: 3}}{% endliteral %} => 8
+		{% literal %}{{5 | minus: 3}}{% endliteral %} => 2
+		{% literal %}{{5 | times: 3}}{% endliteral %} => 15
+		{% literal %}{{6 | divided_by: 3}}{% endliteral %} => 2
 	</pre>
 	
 More filters and documentation can be found on the [Shopify/Liquid Page](http://wiki.shopify.com/FilterReference#Math_Filters).
@@ -26,19 +26,19 @@ difficult.
 
 Constructing the tag cloud
 --------------------------
-The number of tags can be easily retrieved by `{% raw %}{{ site.tags.size }}{% endraw %}`.
+The number of tags can be easily retrieved by `{% literal %}{{ site.tags.size }}{% endliteral %}`.
 
 Looping through the tags is equally simple:
 <pre>
-	{% raw %}{% for tag in site.tags %} 
+	{% literal %}{% for tag in site.tags %} 
 	... 
-	{% endfor %}{% endraw %}
+	{% endfor %}{% endliteral %}
 </pre>
 
-Inside the loop, the name of the current tag can be retrieved via `{% raw %}{{ tag | first }}{% endraw %}`.
+Inside the loop, the name of the current tag can be retrieved via `{% literal %}{{ tag | first }}{% endliteral %}`.
 
 The posts with that tag are the second / last element of `tag`, so we can retrieve the # of posts
-tagged with it via `{% raw %}{{tag | last | size}}{% endraw %}`.
+tagged with it via `{% literal %}{{tag | last | size}}{% endliteral %}`.
 
 ### Some math
 
@@ -55,8 +55,8 @@ is readable. Ofc i lowered the font size for the tag cloud via CSS beforehand.
 
 ### Implementing it in jekyll
 Having a simple formula, implementing it in jekyll was quite trivial:
-<pre>{% raw %}{{tag | last | size | times:100 | divided_by:site.tags.size | plus:100}}
-{% endraw %}</pre>
+<pre>{% literal %}{{tag | last | size | times:100 | divided_by:site.tags.size | plus:100}}
+{% endliteral %}</pre>
 It can be used in inline-CSS to set the `font-size` property of the tag.
 
 Result:
