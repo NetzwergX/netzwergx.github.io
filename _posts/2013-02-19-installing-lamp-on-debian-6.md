@@ -13,11 +13,13 @@ Basic Setup
 ----------------
 
 It first, make sure your package lists are up-to-date:
+
 ```
 apt-get update
 ```
 
 The first thing that is obviously needed is the web server itself. Fortunately, Debian offers packages for almost all our needs.
+
 
 ```
 apt-get install apache2
@@ -26,55 +28,62 @@ apt-get install apache2
 And that's it for the web server. If you navigate to the IP address of your server now, you will see the default "It works!" message from Apache.
 
 After that i decided to g for the MySQL server, and also the client for maintenance etc.:
+
 ```
 apt-get install mysql-server mysql-client
 ```
 You will be asked to enter the password for the root user. 
 
 Now for PHP. I chose to install PHP5, the Apache PHP mod and the PHP-MySQL-Extension all at once:
+
 ```
 apt-get install php5 libapache2-mod-php5 php5-mysql
 ```
 
 After that, you will probably want to customize your PHP installation a bit. I have found these PHP extensions useful:
 
+
 ```
 apt-get install php5-mysql php5-curl php5-gd php5-idn php-pear php5-imagick php5-imap php5-mcrypt php5-memcache php5-ming php5-ps php5-pspell php5-recode php5-snmp php5-sqlite php5-tidy php5-xmlrpc php5-xsl
 ```
 
 Now, let's check out if everything works. At first we need to restart apache:
+
 ```
 /etc/init.d/apache2 restart
 ```
 
 Then we create a file that outputs the `phpinfo();` into a web page:
+
 ```
 cat > /var/www/info.php
+
 <?php phpinfo.php(); ?>;
 ```
 To save this file , press `Ctrl+D`.
 
-Now open http://example.org/info.php in your browser. It should display the PHPInfo page and show all the modules we just installed.
+Now open `http://example.org/info.php` in your browser. It should display the PHP-Info page and show all the modules we just installed.
 
 
-And that is it. You have an operable webserver with PHP amd MySQL.
+And that is it. You have an operable webserver with PHP and MySQL.
 
 
 Further notes
 --------------
 
+
 ### phpMyAdmin
 
 Operating the web server without at least *some* tools will be a pain in the ass. A comonly used tool for database administration is [phpMyAdmin](http://www.phpmyadmin.net/home_page/index.php). Fortunately, there is also a debian package for phpMyAdmin available:
+
 ```
 apt-get install phpmyadmin 
 ```
 This will, however, not work out-of-the box. You will need to create a symlink that links the phpMyAdmin configuration to apache:
-```
-ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin
-```
 
 ```
+ln -s /etc/phpmyadmin/apache.conf /etc/apache2/conf.d/phpmyadmin
+
 /etc/init.d/apache2 restart
 ```
 
