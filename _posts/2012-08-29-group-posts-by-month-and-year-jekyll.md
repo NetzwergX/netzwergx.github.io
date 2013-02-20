@@ -14,7 +14,7 @@ archive widget which shows posts grouped by month and year, which is common for 
 
 The most widely used approach is to write a jekyll plugin for that, but since i wanted to build my 
 page on GitHub directly, that was not an option. So i started building a solution in pure jekyll,
-that is based around `{% literal %}{% assign key = value %}{% endliteral %}`. 
+that is based around `{% raw %}{% assign key = value %}{% endraw %}`. 
 
 
 Conception
@@ -98,14 +98,14 @@ Implementation
 
 The first task was to get the year and month of the current and next post - that was pretty
 straightforward as we can use the `|date` filter:
-{% literal %}
+{% raw %}
 		{% if post.next %}		
 			{% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
 			{% capture nyear %}{{ post.next.date | date: '%Y' }}{% endcapture %}
 			{% capture month %}{{ post.date | date: '%B' }}{% endcapture %}
 			{% capture nmonth %}{{ post.next.date | date: '%B' }}{% endcapture %}
 		{% endif %}
-{% endliteral %}
+{% endraw %}
 
 I also wrapped this in an if-statement to only read year and month hen there really is something
 to compare it with left - meaning, when it is not the last post. While i could have used `forloop.last`,
@@ -113,7 +113,7 @@ i felt using `post.next` is easier to understand. We can, however, utilize `forl
 if we are looking at the first post, or not.
 
 So, having all this laid out and considered, the implementation if quite simple:
-{% literal %}
+{% raw %}
 
 		<ul class="postList archive">
 		{% for post in site.posts %}
@@ -169,7 +169,7 @@ So, having all this laid out and considered, the implementation if quite simple:
 		{% endfor %}														
 		</ul>	
 		
-{% endliteral %}	
+{% endraw %}	
 
 
 This produces the nifty 'Archive' widget you can see here in the sidebar. If you also want to 

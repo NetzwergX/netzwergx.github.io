@@ -89,45 +89,45 @@ If you navigate to `http://example.org/phpmyadmin/` in your web browser now, you
 By default, apache servers all request from the default vHost that is hosted in `/var/www/`. If you want to serve multiple web sites from your server, this configuration is unfavorable. 
 
 The configuration for availabe sites is stored in `/etc/apache2/sites-available/`. The name of the default site is `default`. If you open it, it should look like this:
-```
-<VirtualHost *:80>
-	ServerAdmin webmaster@localhost
 
-	DocumentRoot /var/www/
-	
-	<Directory />
-		Options FollowSymLinks
-		AllowOverride None		
-	</Directory>
-	<Directory /var/www/>
-		Options Indexes FollowSymLinks MultiViews
-		AllowOverride None
-		Order allow,deny
-		allow from all		
-	</Directory>
+	<VirtualHost *:80>
+		ServerAdmin webmaster@localhost
 
-	ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
-	<Directory "/usr/lib/cgi-bin">
-		AllowOverride None
-		Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
-		Order allow,deny
-		Allow from all
-	</Directory>
+		DocumentRoot /var/www/
+		
+		<Directory />
+			Options FollowSymLinks
+			AllowOverride None		
+		</Directory>
+		<Directory /var/www/>
+			Options Indexes FollowSymLinks MultiViews
+			AllowOverride None
+			Order allow,deny
+			allow from all		
+		</Directory>
 
-	ErrorLog ${APACHE_LOG_DIR}/error.log
+		ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+		<Directory "/usr/lib/cgi-bin">
+			AllowOverride None
+			Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+			Order allow,deny
+			Allow from all
+		</Directory>
 
-	# Possible values include: debug, info, notice, warn, error, crit,
-	# alert, emerg.
-	LogLevel warn
+		ErrorLog ${APACHE_LOG_DIR}/error.log
 
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
-```
+		# Possible values include: debug, info, notice, warn, error, crit,
+		# alert, emerg.
+		LogLevel warn
+
+		CustomLog ${APACHE_LOG_DIR}/access.log combined
+	</VirtualHost>
+
 
 I recommend moving the document root from `/var/www/` to `/var/www/vhost/default/` and changing the ServerAdmin to an appropriate value.
 
-You can use the above file as a template for new web pages - create a new folder in `/var/www/vhosts/<new site>` and create a new config file in ``/etc/apache2/sites-available/<new site>`, which you can enable by running
-`a2ensite <new site>` and disable if not needed with`a2dissite <new site>`. make sure to include `RewriteEngine On` where appropriate if you want to use `Mod_rewrite`.
+You can use the above file as a template for new web pages - create a new folder in `/var/www/vhosts/<new site>` and create a new config file in `/etc/apache2/sites-available/<new site>`, which you can enable by running
+`a2ensite <new site>` and disable if not needed with `a2dissite <new site>`. Make sure to include `RewriteEngine On` where appropriate if you want to use `Mod_rewrite`.
 
 You can find ample information about how to create virtual hosts [in the apache documentation](http://httpd.apache.org/docs/2.2/en/vhosts/).
 
