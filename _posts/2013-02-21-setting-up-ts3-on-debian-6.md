@@ -2,7 +2,7 @@
 title: Installing (and/or migrating) TS3 on Debian 6
 layout: article
 excerpt: This guide covers how to install a teamspeak3 server on Debian 6, as well as migrating from an old installation.
-categories: General
+categories: Linux
 tags: [server, linux, debian, teamspeak]
 ---
 

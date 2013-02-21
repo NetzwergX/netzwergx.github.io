@@ -2,7 +2,7 @@
 title: Installing LAMP on Debian 6
 layout: article
 excerpt: Installing LAMP on debian 6 is refreshing easy. This is a Quick How-To Guide through a standard LAMP installation on Debian 6.
-categories: General
+categories: Linux
 tags: [server, linux, debian]
 ---
 
