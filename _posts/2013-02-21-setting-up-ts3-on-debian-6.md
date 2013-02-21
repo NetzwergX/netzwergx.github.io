@@ -18,7 +18,7 @@ so we first create the home dir:
 
 	mkdir /home/ts3user
 		
-	Then we create the user:
+Then we create the user:
 
 	useradd -g users ts3user -d /home/ts3user/ -s /bin/sh
 	
@@ -42,11 +42,11 @@ Check out http://www.teamspeak.com/?page=downloads to find the proper download U
 the current server version is 3.0.6.1, and for this example i am using the 64-Bit version for linux. You can
 easily retrieve it using `wget`:
 
-		wget http://teamspeak.gameserver.gamed.de/ts3/releases/3.0.6.1/teamspeak3-server_linux-amd64-3.0.6.1.tar.gz
+	wget http://teamspeak.gameserver.gamed.de/ts3/releases/3.0.6.1/teamspeak3-server_linux-amd64-3.0.6.1.tar.gz
 	
 And after that, unpack it: 
 
-		tar xfvz teamspeak3-server_linux-amd64-3.0.6.1.tar.gz
+	tar xfvz teamspeak3-server_linux-amd64-3.0.6.1.tar.gz
 	
 After that, the next steps differ for migrating from an old server, or for a fresh installation.
 	
@@ -56,15 +56,15 @@ Installation
 
 First of all, make sure you are running teh server as th ts3 user:
 
-		su ts3user
+	su ts3user
 	
 Fortunately, the installation itself is very easy. Just run 
 
-		./ts3server_minimal_runscript.sh
+	./ts3server_minimal_runscript.sh
 	
 And you will get output that looks like this:
 
-	```
+
 	I M P O R T A N T
 	------------------------------------------------------------------
 	Server Query Admin Acccount created
@@ -72,7 +72,7 @@ And you will get output that looks like this:
 	------------------------------------------------------------------
 	ServerAdmin token created, please use the line below
 	token=****************************************
-	```
+
 	
 You will need those values to gain admin rights on your server. I recommand saving them temporarily in a textfile.
 Currently, the ts3 server runs in your active shell - which is only active as long as you keep the ssh session active.
@@ -84,7 +84,7 @@ To get the server running as a daemon, you can use the `ts3server_startscript`:
 Valid parameters for the startscript are `start`, `stop`, and `restart`, which should be self-explanatory.
 
 After connecting to your ts3 server via the ts3 client, Go to `Permissions` -> `Use privilege key` and insert
-the Serveradmin token from above. You now have admin rights on your server, and are done with setting it up.
+the ServerAdmin token from above. You now have admin rights on your server, and are done with setting it up.
 
 
 Migrating
@@ -103,14 +103,3 @@ version in 64-bit, and no more work was needed.
 
 
 This concludes this quick guide, i hope it was helpful. You can [leave comments by filing an issue on GitHub](https://github.com/NetzwergX/netzwergx.github.com/issues).
-
-
-
-
-
-	
-
-
-
-
-
