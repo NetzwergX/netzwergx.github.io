@@ -1,7 +1,7 @@
 ---
 title: Note to self: literal is now raw
 layout: article
-excerpt: As of the last update to GitHub Pages, the `literal` tag is now `raw`.
+excerpt: As of the last update to GitHub Pages, the literal tag is now raw.
 categories: Notes to self
 tags: [jekyll, blog]
 ---
