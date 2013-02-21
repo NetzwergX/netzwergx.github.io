@@ -1,8 +1,8 @@
 ---
-title: "Note to self: literal is now raw"
+title: "Note to self: `literal` is now `raw`"
 layout: article
-excerpt: As of the last update to GitHub Pages, the literal tag is now raw.
-categories: Notes to self
+excerpt: "As of the last update to GitHub Pages, the `literal` tag is now `raw`."
+categories: "Notes to self"
 tags: [jekyll, blog]
 ---
 Today i wanted to start a new series of blog entries, called "Notes to self". The "Notes to self" series of blog articles is a 
