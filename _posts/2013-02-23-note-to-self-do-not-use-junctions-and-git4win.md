@@ -1,6 +1,6 @@
 ---
 title: "Note to self: Do not use junctions with GitHub for Windows"
-layout: article
+layout: note_to_self
 excerpt: "The GitHub for Windows client does not work properly with junctions (`mklink /j ..`)."
 categories: ["Notes to self", Windows]
 tags: [windows, github, bug]
