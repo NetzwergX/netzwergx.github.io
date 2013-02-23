@@ -10,7 +10,7 @@ to Windows temporarily for my working needs, but I will switch back to Linux *as
 
 
 The "GitHub for Windows" client stores your Git repositories under %Home%/GitHub/. This is fine,
-and it makes sense. But is is not feasible when you want to develop PHP applications.
+and it makes sense. But is it not feasible when you want to develop PHP applications.
 
 So I moved the files from the repository into a subfolder of the document root of my local web 
 server, and created a symbolic link (or, to be precise, a junction, since you can not create hard 
