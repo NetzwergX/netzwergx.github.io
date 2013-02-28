@@ -2,10 +2,23 @@
 layout: page
 title: Tags
 ---
-<!-- categories -->	
+<section class="box">
+	<h1>Tags<span class="hint" style="display:inline; width:auto;">({{site.tags.size}})</span></h1>		
+	<ul class="tagCloud">
+	   {% for tag in site.tags %}      
+	   <li>
+	   	<a href="tags.html#{{ tag | first | cgi_encode }}" 
+	   	style="font-size:{{tag | last | size | times:100 | divided_by:site.tags.size | plus:100}}%">
+		{{ tag | first }}</a>
+		{% unless forloop.last %}, {% endunless %}
+	</li>
+	{% endfor %}    
+	</ul>
+</section>
+<!-- tags -->	
 {% for tag in site.tags %}
 <div class="box">
-	<h1>{{ tag | first }}<a name="{{ tag | first | cgi_escape }}"></a></h1>
+	<h1>{{ tag | first }}<a name="{{ tag | first | cgi_escape }}"></a><span class="hint" style="display:inline; width:auto;">({{tag | last | size}})</span></h1>
 	<ul class="postList">	
 	{% for posts in tag %}
       {% for post in posts %}
