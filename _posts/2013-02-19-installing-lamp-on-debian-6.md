@@ -45,7 +45,7 @@ Now, let's check out if everything works. At first we need to restart apache:
 Then we create a file that outputs the `phpinfo();` into a web page:
 
 	cat > /var/www/info.php
-	<?php phpinfo.php(); ?>;
+	<?php phpinfo(); ?>
 
 To save this file , press `Ctrl+D`.
 
