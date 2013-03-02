@@ -63,6 +63,24 @@ Operating the web server without at least *some* tools will be a pain in the ass
 
 
 	apt-get install phpmyadmin 
+	
+You will get an dialog asking you for the used web server, something like this:                                                                      
+                                                                                
+	 ┌────────────────────────┤ Configuring phpmyadmin ├─────────────────────────┐  
+	 │ Please choose the web server that should be automatically configured to   │  
+	 │ run phpMyAdmin.                                                           │  
+	 │                                                                           │  
+	 │ Web server to reconfigure automatically:                                  │  
+	 │                                                                           │  
+	 │    [ ] apache2                                                            │  
+	 │    [ ] lighttpd                                                           │  
+	 │                                                                           │  
+	 │                                                                           │  
+	 │                                  <Ok>                                     │  
+	 │                                                                           │  
+	 └───────────────────────────────────────────────────────────────────────────┘   
+                                                   
+Make sure to hit `[] apache2`. After that, you will be asked if you want to configure phpmyadmin via dbconfig-common. 
 
 This will, however, not work out-of-the box. You will need to create a symlink that links the phpMyAdmin configuration to apache:
 
