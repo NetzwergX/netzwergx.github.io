@@ -3,7 +3,7 @@ layout: article
 title: Release of Jekyll Template Toolkit (JTT)
 tags: [jekyll, git, github, github-pages, jtt]
 categories: [Jekyll]
-excerpt: Today i released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, which is 100% compatible to github-pages.
+excerpt: Today I've released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, which is 100% compatible to github-pages.
 ---
 The source code can be found in the 
 [repository on GitHub](http://github.com/NetzwergX/jekyll-template-toolkit.git).		
@@ -11,9 +11,9 @@ The source code can be found in the
 Features:
 ---------
 
-JTT was designed with the goal to provide an easy entry to blogging with jekyll on github-pages. It
+JTT was designed with the aim to provide an easy entry to blogging with jekyll on github-pages. It
 provides a collection of widgets that can be used everywhere on a page as well as some pre-defined
-layouts for whole pages, including a category page, tags page, archive page and an RSS feed.
+layouts for whole pages, including a category page, tags page, archive page and a RSS feed.
 The whole set of provided templates is described below.
 
 Widgets
@@ -21,26 +21,26 @@ Widgets
 
 * **Category List** (categoryList.html)
 
-	A simple list containing all categories and the number of posts in them.
-	Useful for navigations e.g. in sidebars.
+	A simple list containing all categories and the number of posts within.
+	Useful for navigations, e.g. in sidebars.
 
 * **Post Timeline** (timeLine.html)
 
 	A time line containing all month in which posts were published, grouped by year.
-	Useful for navigations e.g. in sidebars.
+	Useful for navigations, e.g. in sidebars.
 
 * **Tag Cloud** (tagCloud.html)
 
-	A linear weighted tag cloud. 
+	A linear-weighted tag cloud. 
 	
 * **Similar posts list** (similarPostList.html)
 
 	A list containing similar posts.
-	Useful to provide some "Further reading" links to the user. Only works on post pages.
+	Useful to provide some "Further reading" links to the user. It only works on post pages.
 	
 * **Google Search box** (googleSearchForm.html)
 
-	A very simple search box with an input field and submit button. searches via google.		
+	A very simple search box with an input field and submit button. It searches via Google.		
 
 * **Tapir search box** (WIP)
 
@@ -53,20 +53,20 @@ Pages
 * **Category Page** (categories.html)
 
 	A page listing all posts grouped by category.
-	Has IDs in order to jump to a specific category directly.
+	Has IDs in order to jump directly to a specific category.
 
 * **Archive Page** (archive.html)
 
 	A page listing all posts grouped by year and month.
-	Has IDs in order to jump to a specif month or month-year combination directly.
+	Has IDs in order to jump directly to a specific month or month-year combination.
 
 * **Full Feed Page** (fullFeed.xml)
 
-	Provides an RSS 2.0 Feed containing all posts.	
+	Provides a RSS 2.0 Feed containing all posts.	
 	
 * **Feed Page** (fullFeed.xml)
 
-	Provides an RSS 2.0 Feed containing the X latest posts. Defaults to 5.	
+	Provides a RSS 2.0 Feed containing the X latest posts. Defaults to 5.	
 		
 		
 Layouts
@@ -89,9 +89,9 @@ Layouts
 	Base layout for RSS 2.0 feeds.
 	
 	
-More information:
+Further information:
 -----------------
 		
-You can find more information in the 
+You can find further information in the 
 [README.md](https://github.com/NetzwergX/jekyll-template-toolkit/blob/master/README.md) and wiki of 
 [the repository on GitHub](http://github.com/NetzwergX/jekyll-template-toolkit.git).
