@@ -3,27 +3,27 @@ layout: hlArticle
 title: Group posts by month and year in jekyll
 tags: [jekyll, github, github-pages, jtt]
 categories: [Jekyll]
-excerpt: This article describes the technique used in this blog to display posts grouped by month and year in jekyll, most prominently seen in the widget in the sidebar. No plugin is required for this.
+excerpt: This article describes the technique used in this blog to display posts grouped by month and year in jekyll, most prominently seen in the widget within the sidebar. No plugin is required for this.
 ---
 _If you are just interested in the synopsis and source code, jump to the bottom of the page_.
 
 
 A common problem many people face when writing their page with jekyll is to display a timeline or 
-archive widget which shows posts grouped by month and year, which is common for most blogs.
+archive widget, which shows posts grouped by month and year, quite common for most blogs.
 
 
-The most widely used approach is to write a jekyll plugin for that, but since i wanted to build my 
-page on GitHub directly, that was not an option. So i started building a solution in pure jekyll,
-that is based around `{% raw %}{% assign key = value %}{% endraw %}`. 
+The most widely used approach is to write a jekyll plugin for that, but as I wanted to build my 
+page directly on GitHub, that was not an option. So I started building a solution in pure jekyll,
+which is based around `{% raw %}{% assign key = value %}{% endraw %}`. 
 
 
 Conception
 ----------
-Since i am in the habit of giving things thought before i start, i took a pen & paper and made a 
+Since I am in the habit of giving things a thorough thought before starting, I took pen & paper and made a 
 general concept of how this should work.
 
 ###HTML markup
-First of all i laid out the result i wanted to achieve in HTML. Since this is a grouped list, using 
+First of all I have laid out the result I wanted to achieve in HTML. Since this is a grouped list, using 
 nested lists was the semantic correct approach. This is pretty straight forward:
 
 		<ul>
@@ -62,11 +62,11 @@ nested lists was the semantic correct approach. This is pretty straight forward:
 			.
 		</ul>
 		
-It can easily be seen that the whole nesting might get a little bit complicated, and as it turns out,
-getting the nesting of the markup right was indeed the major problem i faced, not grouping the posts.
+It can easily be seen that the whole nesting might get a little bit complicated. As it turned out,
+getting the nesting of the markup right was indeed the major problem I had to face, not grouping the posts.
 
 ### Grouping the posts
-How do i group the posts now? Well, we can easily use the `|date:''` filter for that. Simply 
+How do I group the posts now? Well, we can easily use the `|date:''` filter for that. Simply 
 looping through the `site.posts` array and comparing the year of the current post with the year
 of the next post will give us the possibility to group posts by years.
 
@@ -81,16 +81,16 @@ The other two possible cases are:
 * Month changes
 * Year changes
 
-When only the month changes, the month list has to be closed, and then re-opened and the month header 
+When only the month changes, the month list has to be closed, then re-opened and the month header 
 has to be included.
 
-When the year changes, both the month list and the year list have to be closed and then re-opened 
+When the year changes, both, the month list and the year list have to be closed and then re-opened 
 with appropriate headers.
 
-One trap i almost fell into was that while the year might change, the month might not. Consider
-the situation where there was no blog post for a year, e.g. one Post in May 2010 and one in May 2011.
+One trap I almost fell into was that while the year might change, the month might not. Consider
+the situation when there has not been a blog post for a year, e.g. one post in May 2010 and one in May 2011.
 While iterating through the posts array, the year will change, but the month will not. I know it's
-an edge-case that might not apply to the real world, but i wanted to be thorough.
+an edge-case that might not apply to the real world, but I wanted to be thorough.
 
 
 Implementation
@@ -107,12 +107,12 @@ straightforward as we can use the `|date` filter:
 		{% endif %}
 {% endraw %}
 
-I also wrapped this in an if-statement to only read year and month hen there really is something
-to compare it with left - meaning, when it is not the last post. While i could have used `forloop.last`,
-i felt using `post.next` is easier to understand. We can, however, utilize `forloop.first` to check
-if we are looking at the first post, or not.
+I also wrapped this in an if-statement to only read year and month when there is really something
+to compare it with left; meaning, when it is not the last post. While I could have used `forloop.last`,
+I felt using `post.next` is easier to understand. We can, however, utilize `forloop.first` to check
+if we are looking at the first post or not.
 
-So, having all this laid out and considered, the implementation if quite simple:
+So, having all this laid out and considered, the implementation is quite simple:
 {% raw %}
 
 		<ul class="postList archive">
