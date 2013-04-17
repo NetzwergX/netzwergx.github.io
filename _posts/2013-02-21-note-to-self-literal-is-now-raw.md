@@ -1,14 +1,14 @@
 ---
-title: "Note to self: `literal` is now `raw`"
+title: "Note to myself: `literal` is now `raw`"
 layout: article
 excerpt: "As of the last update to GitHub Pages, the `literal` tag is now `raw`."
-categories: ["Notes to self"]
+categories: ["Notes to myself"]
 tags: [jekyll, blog, github-pages]
 ---
-Today i wanted to start a new series of blog entries, called "Notes to self". The "Notes to self" series of blog articles is a 
-series of brief facts, tricks and code snippets that i have found useful and memorable and don't want to forget.
+Today I wanted to start on a new series of blog entries, called "Notes to myself". The "Notes to myself" series of blog articles is a 
+series of brief facts, tricks and code snippets that I consider to be useful, memorable and don't want to forget.
 
-The first member of this new series is about [GitHub Pages](http://pages.github.com). 
+The first entry of this new series is about [GitHub Pages](http://pages.github.com). 
 
 
 [Early this year, GitHub Pages was updated](https://github.com/blog/1366-github-pages-updated-to-jekyll-0-12-0) to Jekyll 0.12.0.
