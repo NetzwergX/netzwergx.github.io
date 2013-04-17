@@ -5,11 +5,11 @@ excerpt: "The idea behind `etckeeper` is as simple as smart: Use a VCS to keep t
 categories: ["Linux"]
 tags: [git, linux, etc, debian, ubuntu]
 ---
-It is astonishing, how simple an idea can be, and how much trouble it can save. Keeping the whole /etc/ folder under version control is a simple, yet elegant solution to many problems with it. Mistyped something in the config? Screwed up something? Doesn't matter anymore. Check out your latest changes, and roll them back. Have forgotten why you changed _that_ setting to _this_, and why it was important? Check for the proper commit and read your own commit message explaining your change (if you were so careful to write one).
+It is astonishing, how simple an idea can be and how much trouble it can save. Keeping the whole /etc/ folder under version control is a simple, yet elegant solution to many problems with it. Mistyped something in the config? Screwed up something? It doesn't matter anymore. Check out your latest changes and roll them back. Have forgotten why you changed _that_ setting to _this_, and why it was important? Check for the proper commit and read your own commit message explaining your change (if you were so careful to write one).
 
 Really, `etckeeper` is worth gold. You do not need `etckeeper`to keep your `/etc/` under version control, but it certainly makes it easier, providing you with a common command line interface for multiple VCS. Currently, `etckeeper` supports [`hg` (Mercurial)](http://mercurial.selenic.com/), [`git`](http://git-scm.com/), [`bzr` (Bazaar)](http://bazaar.canonical.com/en/) and [`darcs`](http://darcs.net/).
 
-`etckeeper` will automatically tracks changes made during package installation/removal, and snapshots the state of `/etc/` once a day.
+`etckeeper` will automatically tracks changes made during package installation/removal and snapshots the state of `/etc/` once a day.
 
 Installation
 ------------
@@ -73,14 +73,14 @@ And you are done.
 Advanced usage
 --------------
 
-Since you are basically using a VCS (using git for example will initialize a `.git/` - repository in `/etc/`, you can use all features of your VCS also for tracking. This means that you can and should commit the changed files after each change, and should explain your changes in the commit message. This can save much, much time in the future when you are trying to re-think what you have done, and why.
+Since you are basically using a VCS (using git for example will initialize a `.git/` - repository in `/etc/`, you can use all features of your VCS also for tracking. That means you can and should commit the changed files after each change and should explain your changes in the commit message. This can save much, much time in the future when you are trying to re-think what you have done and why.
 
-You can also use other features of your VCS, such as branching. Want to try out a new configuration? Create a new branch (not using `etckeeper`, but using the VCS you are using with `ètckeeper`), make some changes, commit them and thoroughly test them, maybe even for some days. If it turns out those changes were good, merge said branch into the `master` branch and keep them. Otherwise, just switch back to the `master` branch and delete the old branch (or maybe merge only some commits from the branch into `master`). This is not really important on a desktop pc, but can be quite handy when used on a server. A good scenario is when you are tweaking performance issues, and set some variables for certain services to new values. You might want to monitor how that turns out for some days, and then decide wether to keep those changes, or not.
-
-
-All in all, i have found [etckeeper](http://joeyh.name/code/etckeeper/) a very handy solution for keeping `/etc/` under control. It a simple, yet smart way of doing this.
+You can also use other features of your VCS, such as branching. Want to try out a new configuration? Create a new branch (not using `etckeeper`, but using the VCS you are using with `ètckeeper`), make some changes, commit them and thoroughly test them, maybe even for some days. If it turns out those changes were good, merge the said branch into the `master` branch and keep them. Otherwise, just switch back to the `master` branch and delete the old branch (or maybe merge only some commits from the branch into `master`). This is not really important on a desktop pc, but can be quite handy when used on a server. A good scenario is when you are tweaking performance issues and set some variables for certain services to new values. You might want to monitor how that turns out for some days and then decide wether to keep those changes or not.
 
 
-This concludes this article, I hope it was helpful. You can [leave comments by filing an issue
+All in all, I have found [etckeeper](http://joeyh.name/code/etckeeper/) a very handy solution for keeping `/etc/` under control. It a simple, yet smart way of doing this.
+
+
+This concludes this article, I hope it was helpful to you. You can [leave comments by filing an issue
 on GitHub](https://github.com/NetzwergX/netzwergx.github.com/issues).
 
