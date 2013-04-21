@@ -21,8 +21,8 @@ Dieses Impressum gilt für die Domain _teumert.net_.
 
 
 ### Haftungsausschluss
-Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links.
-Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. 
+Trotz sorgfältiger inhaltlicher Kontrolle übernehme ich keine Haftung für die Inhalte externer Links.
+Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich.
 
 
 
