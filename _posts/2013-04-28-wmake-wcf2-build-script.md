@@ -28,4 +28,4 @@ Download
 
 **wmake** is a small shell script that is [available as Gist on GitHub](https://gist.github.com/NetzwergX/5476496).
 
-<script src="https://gist.github.com/NetzwergX/5476496.js"></script>
+
