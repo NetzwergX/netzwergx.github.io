@@ -1,6 +1,122 @@
-{% include header.html %}
-<div id="main">	
-	{{ content }}	
-</div>	
-{% include sidebar.html %}
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+	<!-- Base url -->
+	<base href="{{ site.url }}" />
+
+	<!-- Meta Information -->
+	<title>{{ page.title }} {% if paginator != nil %} &ndash; Page {{ paginator.page}} {% endif %}&ndash; Sebastian Teumert</title>
+	<meta name="description" content="{{ page.excerpt }}" />
+	<meta name="keywords" content="{{ page.tags | array_to_sentence }}" />
+	<meta name="author" content="Sebastian Teumert" />	
+	
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!--Favicon -->
+	<link rel="shortcut icon" href="assets/icons/favicon.png" />
+	<link rel="icon" type="image/x-icon" href="assets/icons/favicon.png" />
+
+	<!-- Apple Touch Icons --><!--
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/icons/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icons/apple-touch-icon-114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/apple-touch-icon-72.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/icons/apple-touch-icon-57.png">-->
+
+	<!-- Stylesheets -->
+
+	<!-- Twitter Bootstrap (without icons) -->
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet" />
+
+	<!-- Font Awesome Font Icons -->
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet" />
+			
+	<!-- Website Style -->
+	<link href="assets/style.css" rel="stylesheet" />	
+
+	<!-- HTML5 shiv, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+		<script src="//netdna.bootstrapcdn.com/html5shiv/3.6.1/html5shiv.js"></script>
+	<![endif]-->
+
+	<!-- IE 7 support of Font Awesome -->
+	<!--[if IE 7]>
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome-ie7.min.css" rel="stylesheet" />
+	<![endif]-->
+
+	<!-- IE Mobile clearfix -->
+	<!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
+</head>
+
+<body>
+<div class="container">
+
+	<header>		
+			<div class="row">
+				<div class="span9">				
+					<div class="page-header">
+  						<h1>
+							<a href="{{site.url}}">Sebastian Teumert</a><br/>
+							<small class="hidden-phone">personal tech / dev blog - read <a href="about.html" title="About me">about me</a>, 
+							my <a href="software.html" title="About my software">software</a> 
+							and the many <a href="tags.html">technologies</a> I use.</small>
+						</h1>
+					</div>					
+				</div>
+				<div class="span3">
+					<ul class="nav nav-list sidebar-nav well">
+						<li><a href="archives.html"><i class="icon-list"></i> Browse Archives</a></li>
+						<li><a href="feed.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
+						<li><a href="http://www.twitter.com/NetzwergX"><i class="icon-twitter"></i> Follow on Twitter</a></li>
+						<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>
+						<li class="divider visible-phone"></li>
+						<li class="visible-phone"><a href="about.html"><i class="icon-info"></i> About me</a></li>
+						<li class="visible-phone"><a href="software.html"><i class="icon-cogs"></i> My software</a></li>					
+					</ul>
+				</div>
+			</div>		
+	</header>
+
+	<div class="row" id="main">
+		<section class="span9">				
+			{{ content }}
+		</section>
+		<aside class="span3" id="sidebar">			
+			<nav class="well sidebar-nav">
+				<ul class="nav nav-list">	
+	  				{% include widgets/categoryList.html %}
+					<li class="divider"></li>
+					{% include widgets/timeLine.html %}
+					<li class="divider"></li>
+					{% include widgets/tagCloud.html %}
+					<li class="divider"></li>
+					<li class="nav-header">Misc</li>
+					<li><a href="about.html">About me</a></li>
+					<li><a href="software.html">My Software</a></li>
+					<li><a href="hire.html">Contact &amp; Hire me</a></li>			
+					<li class="divider"></li>
+					<li><a href="build.html">About this page</a></li>
+					<li><a href="sitemap.html">Sitemap</a></li>
+					<li><a href="impressum.html">Impressum</a></li>
+				</ul>
+			</nav>			
+		</aside>
+	</div>
+
+	<footer id="footer">
+		&copy; 2012 &ndash; 2013 <a href="http://teumert.net/impressum.html">Sebastian Teumert</a>
+		&ndash;
+		Crafted with <a href="http://jekyllrb.com">Jekyll</a> 
+		&amp; <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
+		, hosted on <a href="http://pages.github.com">GitHub Pages</a>
+	</footer>
+	
+</div>
+</body>
+</html>

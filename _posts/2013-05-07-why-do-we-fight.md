@@ -1,5 +1,5 @@
 ---
-title: "Why do we fight -- and what for?"
+title: "Why do we fight – and what for?"
 layout: article
 excerpt: "This is the question I ask myself more often lately, seeing board discussions go sideways, parties in discussions getting mixed up in fights rather then discussions, and people constantly blaming other people for things that could be considered insignificant."
 categories: [WCF, General, Personal]

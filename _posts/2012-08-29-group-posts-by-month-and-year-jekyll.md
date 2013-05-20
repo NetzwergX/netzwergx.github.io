@@ -1,5 +1,5 @@
 ---
-layout: hlArticle
+layout: article
 title: Group posts by month and year in jekyll
 tags: [jekyll, github, github-pages, jtt]
 categories: [Jekyll]

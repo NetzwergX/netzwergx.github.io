@@ -1,4 +1,53 @@
 ---
-layout: index
+layout: page
 title: Home
 ---
+
+{% for post in paginator.posts %}
+  <article>
+  	<header>
+		<time datetime="{{post.date | date: "%Y-%m-%d"}}" title="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%d.%m.%Y"}}</time>					
+		<h1><span><a href="{{post.url}}" title="Read more about '{{ post.title }}'">{{ post.title }}</a></span></h1>
+	</header>	
+	{{ post.excerpt | markdownify }}	
+	<p class="text-right"><em><a href="{{ post.url }}#more" title="Read more about '{{ post.title }}'">Read more &hellip;</em></a></p>
+	<footer>			
+		{% include widgets/postCategoryList.html %}
+		{% include widgets/postTagList.html %}		
+	</footer>	
+	</article>
+{% endfor %}
+
+<div class="pagination pagination-large pagination-centered">
+	<ul>
+  	{% if paginator.previous_page %}
+    	<li>
+			{% if paginator.previous_page == 1 %}<a href="/">&laquo;</a>
+			{% else %}<a href="{{ paginator.previous_page_path }}">&laquo;</a>{% endif %}
+    	</li>
+  	{% else %}
+    	<li class="disabled"><span>&laquo;</span></li>
+ 	{% endif %}
+  
+  
+	{% if paginator.page == 1 %}
+	<li class="active"><span>1</span></li>
+	{% else %}
+	<li><a href="/">1</a></li>
+	{% endif %}    
+
+    {% for count in (2..paginator.total_pages) %}      
+        {% if count == paginator.page %}
+          <li class="active"><span>{{ count }}</span></li>
+        {% else %}
+          <li><a href="/page{{ count }}">{{ count }}</a></li>
+        {% endif %}     
+    {% endfor %}  
+
+	{% if paginator.next_page %}
+		<li><a href="{{ paginator.next_page_path }}">&raquo;</a></li>
+	{% else %}
+		<li class="disabled"><span>&raquo;</span></li>
+	{% endif %}
+	</ul>
+</div>
