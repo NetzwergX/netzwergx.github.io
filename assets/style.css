@@ -79,6 +79,10 @@ article footer {
 	border-top: 1px solid #d3d3d3;
 }
 
+.sidebar-nav li {
+	text-transform: uppercase;
+}
+
 footer, time {
 	color: #708090;
 }
