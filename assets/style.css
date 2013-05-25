@@ -29,8 +29,12 @@ header h2 {
 }
 
 header h1 small {
-	color: #708090;
+	color: #333; #708090;
 	font-size: 0.5em;
+}
+
+header h1 small a {
+	color: #0088cc;	
 }
 
 .page-header {
@@ -65,10 +69,6 @@ article footer {
 	border-top: 1px solid #d3d3d3;
 }
 
-#main {
-	margin-top: 1.6em;
-}
-
 footer, time {
 	color: #708090;
 }
@@ -90,8 +90,4 @@ footer, time {
 	article {
 		padding: 0;
 	}	
-
-	#main {
-		margin-top: 0.4em;
-	}
 }

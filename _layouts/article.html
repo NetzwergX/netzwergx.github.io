@@ -10,6 +10,7 @@ layout: page
 	<a id="more"></a>
 	{{ content }}
 	{% if page.tags != nil && page.category != nil %}
+	<p class="text-right"><em>Sebastian Teumert</em></p>
 	<footer>
 		{% assign post = page % %}
 		{% include widgets/postCategoryList.html %}

@@ -54,48 +54,55 @@
 	<!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->
 </head>
 
-<body>
-<div class="container">
+<body class="container">
 
 	<header>		
 			<div class="row">
-				<div class="span9">				
+				<div class="span9">	
 					<div class="page-header">
   						<h1>
 							<a href="{{site.url}}">Sebastian Teumert</a><br/>
-							<small class="hidden-phone">personal tech / dev blog - read <a href="about.html" title="About me">about me</a>, 
+							<small class="">personal tech / dev blog - read <a href="about.html" title="About me">about me</a>, 
 							my <a href="software.html" title="About my software">software</a> 
 							and the many <a href="tags.html">technologies</a> I use.</small>
 						</h1>
-					</div>					
-				</div>
-				<div class="span3">
-					<ul class="nav nav-list sidebar-nav well">
+						<ul class="nav nav-list inline visible-phone">
+							<li><a href="archives.html"><i class="icon-list"></i> Browse Archives</a></li>
+							<li><a href="feed.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
+							<li><a href="http://www.twitter.com/NetzwergX"><i class="icon-twitter"></i> Follow on Twitter</a></li>
+							<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>									
+						</ul>
+					</div>			
+				</div>			
+
+				<div class="span3 hidden-phone">
+					<ul class="nav nav-list sidebar-nav">
 						<li><a href="archives.html"><i class="icon-list"></i> Browse Archives</a></li>
 						<li><a href="feed.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
 						<li><a href="http://www.twitter.com/NetzwergX"><i class="icon-twitter"></i> Follow on Twitter</a></li>
-						<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>
-						<li class="divider visible-phone"></li>
-						<li class="visible-phone"><a href="about.html"><i class="icon-info"></i> About me</a></li>
-						<li class="visible-phone"><a href="software.html"><i class="icon-cogs"></i> My software</a></li>					
+						<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>									
 					</ul>
 				</div>
 			</div>		
 	</header>
 
-	<div class="row" id="main">
-		<section class="span9">				
+	<div class="row">
+		<section class="span9">					
 			{{ content }}
 		</section>
-		<aside class="span3" id="sidebar">			
-			<nav class="well sidebar-nav">
-				<ul class="nav nav-list">	
-	  				{% include widgets/categoryList.html %}
+		<aside class="span3" id="sidebar">				
+			<nav class="sidebar-nav">		
+				<ul class="nav nav-list">			
+										
+					{% include widgets/categoryList.html %}
 					<li class="divider"></li>
+				
 					{% include widgets/timeLine.html %}
 					<li class="divider"></li>
+
 					{% include widgets/tagCloud.html %}
 					<li class="divider"></li>
+			
 					<li class="nav-header">Misc</li>
 					<li><a href="about.html">About me</a></li>
 					<li><a href="software.html">My Software</a></li>
@@ -103,9 +110,10 @@
 					<li class="divider"></li>
 					<li><a href="build.html">About this page</a></li>
 					<li><a href="sitemap.html">Sitemap</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
+					<li><a href="impressum.html">Impressum</a></li>						
+						
 				</ul>
-			</nav>			
+			</nav>					
 		</aside>
 	</div>
 
@@ -115,8 +123,7 @@
 		Crafted with <a href="http://jekyllrb.com">Jekyll</a> 
 		&amp; <a href="http://twitter.github.io/bootstrap/">Twitter Bootstrap</a>
 		, hosted on <a href="http://pages.github.com">GitHub Pages</a>
-	</footer>
-	
-</div>
+	</footer>	
+
 </body>
 </html>
