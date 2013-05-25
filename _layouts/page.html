@@ -11,7 +11,9 @@
 	<!-- Meta Information -->
 	<title>{{ page.title }} {% if paginator != nil %} &ndash; Page {{ paginator.page}} {% endif %}&ndash; Sebastian Teumert</title>
 	<meta name="description" content="{{ page.excerpt }}" />
+	{% if page.tags %}
 	<meta name="keywords" content="{{ page.tags | array_to_sentence }}" />
+	{% endif %}
 	<meta name="author" content="Sebastian Teumert" />	
 	
 	<!-- Responsive and mobile friendly stuff -->
@@ -68,7 +70,7 @@
 						</h1>
 						<ul class="nav nav-list inline visible-phone noprint">
 							<li><a href="archives.html"><i class="icon-list"></i> Browse Archives</a></li>
-							<li><a href="feed.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
+							<li><a href="atom.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
 							<li><a href="http://www.twitter.com/NetzwergX"><i class="icon-twitter"></i> Follow on Twitter</a></li>
 							<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>	
 					</ul>
@@ -78,7 +80,7 @@
 				<div class="span3 hidden-phone">
 					<ul class="nav nav-list sidebar-nav">
 						<li><a href="archives.html"><i class="icon-list"></i> Browse Archives</a></li>
-						<li><a href="feed.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
+						<li><a href="atom.xml"><i class="icon-rss"></i> Subscribe via RSS</a></li>
 						<li><a href="http://www.twitter.com/NetzwergX"><i class="icon-twitter"></i> Follow on Twitter</a></li>
 						<li><a href="http://github.com/NetzwergX"><i class="icon-github"></i> Fork on GitHub</a></li>	
 						<li class="divider"></li>								
@@ -102,10 +104,8 @@
 					<li class="divider"></li>			
 					<li class="nav-header">Misc</li>
 					<li><a href="about.html">About me</a></li>
-					<li><a href="software.html">My Software</a></li>
-					<li><a href="hire.html">Contact &amp; Hire me</a></li>			
+					<li><a href="software.html">My Software</a></li>								
 					<li class="divider"></li>
-					<li><a href="this_page.html">About this page</a></li>
 					<li><a href="sitemap.html">Sitemap</a></li>
 					<li><a href="impressum.html">Impressum</a></li>
 				</ul>
