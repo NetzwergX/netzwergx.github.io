@@ -10,7 +10,7 @@ title: Home
 		<h1><span><a href="{{post.url}}" title="Read more about '{{ post.title }}'">{{ post.title }}</a></span></h1>
 	</header>	
 	{{ post.excerpt | markdownify }}	
-	<p class="text-right"><em><a href="{{ post.url }}#more" title="Read more about '{{ post.title }}'">Read more &hellip;</em></a></p>
+	<p class="text-right"><em><a href="{{ post.url }}#more" title="Read more about '{{ post.title }}'">Read more &hellip;</a></em></p>
 	<footer>			
 		{% include widgets/postCategoryList.html %}
 		{% include widgets/postTagList.html %}		

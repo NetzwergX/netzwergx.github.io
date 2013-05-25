@@ -16,6 +16,7 @@ The contents of the following directories are intellectual property of Sebastian
 Teumert, you may not redistribute or reuse them in any form:
 
 * `_posts/`
+* `_drafts/`
 * `assets/`
 
 All other files are subject to the following license:

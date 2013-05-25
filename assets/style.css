@@ -50,6 +50,10 @@ ul.inline {
 	display: inline;
 }
 
+.main {
+	margin-top: 0.5em;
+}
+
 article, .mainSection {
 	text-align: justify;	
 	margin-bottom: 2em;
