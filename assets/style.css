@@ -6,6 +6,11 @@
  *
  */
 
+body, input, button, select, textarea, .navbar-search .search-query {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+}
+
 body, html {
 	background-color: #eee;	
 	color:#000;
@@ -24,17 +29,18 @@ header {
 	margin-top: 1.6em;
 }
 
-header h2 {
-	font-size: 1.6em;
+#header h1 {
+	font-size: 3em;
 }
 
 header h1 small {
 	color: #333; #708090;
-	font-size: 0.5em;
+	font-size: 0.4em;
+	font-style: italic;
 }
 
 header h1 small a {
-	color: #0088cc;	
+	color: #0088cc;		
 }
 
 .page-header {
@@ -51,7 +57,7 @@ ul.inline {
 }
 
 .main {
-	margin-top: 0.5em;
+	margin-top: 0.8em;
 }
 
 article, .mainSection {
