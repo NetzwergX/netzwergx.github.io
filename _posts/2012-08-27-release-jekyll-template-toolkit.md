@@ -3,13 +3,10 @@ layout: article
 title: Release of Jekyll Template Toolkit (JTT)
 tags: [jekyll, git, github, github-pages, jtt]
 categories: [Jekyll]
-excerpt: Today I've released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, which is 100% compatible to github-pages.
 ---
-The source code can be found in the 
-[repository on GitHub](http://github.com/NetzwergX/jekyll-template-toolkit.git).		
-
-Features:
----------
+Today I've released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, 
+which is 100% compatible to github-pages. The source code can be found in the 
+[repository on GitHub](http://github.com/NetzwergX/jekyll-template-toolkit.git).
 
 JTT was designed with the aim to provide an easy entry to blogging with jekyll on github-pages. It
 provides a collection of widgets that can be used everywhere on a page as well as some pre-defined
@@ -40,7 +37,7 @@ Widgets
 	
 * **Google Search box** (googleSearchForm.html)
 
-	A very simple search box with an input field and submit button. It searches via Google.		
+	A very simple search box with an input field and submit button. It searches via Google.
 
 * **Tapir search box** (WIP)
 

@@ -1,10 +1,10 @@
 ---
 title: Update for JTT
 layout: article
-excerpt: The update for the Jekyll Template Toolkit (JTT) included several bugfixes.
 categories: Jekyll
 tags: [jekyll, github-pages, blog]
 ---
+The update for the Jekyll Template Toolkit (JTT) included several bugfixes.  
 While working on my blog, I have encountered several flaws in JTT and went to fix them. There were some minor issues,
 e.g. an escaping issue in the category list widget, which made the site fail the validation check and a minor issue
 with the pagination.

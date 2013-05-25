@@ -3,10 +3,10 @@ layout: article
 title: Group posts by month and year in jekyll
 tags: [jekyll, github, github-pages, jtt]
 categories: [Jekyll]
-excerpt: This article describes the technique used in this blog to display posts grouped by month and year in jekyll, most prominently seen in the widget within the sidebar. No plugin is required for this.
 ---
-_If you are just interested in the synopsis and source code, jump to the bottom of the page_.
+This article describes the technique used in this blog to display posts grouped by month and year in jekyll, most prominently seen in the widget within the sidebar. No plugin is required for this.
 
+_If you are just interested in the synopsis and source code, jump to the bottom of the page_.
 
 A common problem many people face when writing their page with jekyll is to display a timeline or 
 archive widget, which shows posts grouped by month and year, quite common for most blogs.
@@ -15,7 +15,6 @@ archive widget, which shows posts grouped by month and year, quite common for mo
 The most widely used approach is to write a jekyll plugin for that, but as I wanted to build my 
 page directly on GitHub, that was not an option. So I started building a solution in pure jekyll,
 which is based around `{% raw %}{% assign key = value %}{% endraw %}`. 
-
 
 Conception
 ----------

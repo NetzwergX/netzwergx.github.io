@@ -3,8 +3,10 @@ layout: article
 title: Blogging with jekyll
 tags: [ruby, jekyll, git, github, blogging, blog]
 categories: [Jekyll, General]
-excerpt: Yet another blog? Yup, and some interesting stuff to read. Development announcements, interesting code snippets, oddities from programming languages and much more.
 ---
+Yet another blog? Yup, and some interesting stuff to read. Development announcements, interesting code 
+snippets, oddities from programming languages and much more.
+
 Since I am currently in the process of restructing my website, I have set up this blog as a central
 place for everything I think is worthwhile to share. This will include lots of source code as
 this is a technical blog. Things I am going to post here include:
