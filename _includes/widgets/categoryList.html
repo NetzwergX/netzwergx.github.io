@@ -12,6 +12,6 @@
 {% endcomment %}
 <li class="nav-header">Categories</li>	
 {% for category in site.categories %}
-	<li><a href="/categories.html#{{ category | first | cgi_escape}}">{{ category | first}} <span class="pull-right">({{ category | last | size }})</span></a></li>			
+	<li><a href="/categories.html#{{ category | first | cgi_escape}}">{{ category | first }} <span class="pull-right">({{ category | last | size }})</span></a></li>			
 {% endfor %}
 	

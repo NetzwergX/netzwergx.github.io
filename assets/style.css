@@ -83,6 +83,10 @@ article footer {
 	text-transform: uppercase;
 }
 
+.sidebar-nav li.nav-header {
+	font-size: 1em;	
+}
+
 footer, time {
 	color: #708090;
 }
@@ -90,7 +94,8 @@ footer, time {
 #footer {
 	margin-bottom: 1.6em;
 	padding-top: 0.8em;
-	border-top: 1px solid #d3d3d3;		
+	border-top: 1px solid #d3d3d3;	
+	text-align: center;	
 }
 
 /* 
@@ -104,4 +109,12 @@ footer, time {
 	article {
 		padding: 0;
 	}	
+
+	.noprint {
+		display:none !important;
+	}
+
+	#footer {
+		text-align: justify;
+	}
 }
