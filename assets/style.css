@@ -56,6 +56,11 @@ ul.inline {
 	display: inline;
 }
 
+.nav-list .divider {
+	background-color: #d5d5d5;
+	border-bottom: 1px solid #eee;
+}
+
 .main {
 	margin-top: 0.8em;
 }
