@@ -12,7 +12,7 @@
 	<title>{{ page.title }} {% if paginator != nil %} &ndash; Page {{ paginator.page}} {% endif %}&ndash; Sebastian Teumert</title>
 	<meta name="description" content="{{ page.excerpt }}" />
 	{% if page.tags %}
-	<meta name="keywords" content="{{ page.tags | array_to_sentence }}" />
+	<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
 	{% endif %}
 	<meta name="author" content="Sebastian Teumert" />	
 	
@@ -30,6 +30,9 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/icons/apple-touch-icon-114.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/icons/apple-touch-icon-72.png">
     <link rel="apple-touch-icon-precomposed" href="assets/icons/apple-touch-icon-57.png">-->
+
+	<!-- feed -->
+	<link rel="feed alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed">
 
 	<!-- Stylesheets -->
 
