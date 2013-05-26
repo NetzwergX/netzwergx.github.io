@@ -1,10 +1,10 @@
 ---
 title: "JTT in action"
 layout: article
-excerpt: "Ever wanted to see JTT in action? Then there is no time like the present! JTT is already used on numerous websites, some hosted on GitHub Pages, some elsewhere. Take a look at some excellent examples on how JTT can be used!"
 categories: [Jekyll]
 tags: [jekyll, liquid, jtt, template, toolkit, github-pages, gh-pages, github, sites, demos]
 ---
+Ever wanted to see JTT in action? Then there is no time like the present! JTT is already used on numerous websites, some hosted on GitHub Pages, some elsewhere. Take a look at some excellent examples on how JTT can be used!
 
 Apart from my very own blog, the [Jekyll Template Toolkit (JTT)](https://github.com/NetzwergX/jekyll-template-toolkit) you can see JTT in action at the following sites / being used by the following people:
 

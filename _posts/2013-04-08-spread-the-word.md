@@ -1,10 +1,11 @@
 ---
 title: "1st quarter of 2013 roundup - Spread the word!"
 layout: article
-excerpt: "The new year saw some interesting developments, as I have been mentioned with my software several times throughout the web."
 categories: [General, Jekyll, WCF]
 tags: [jekyll, github, twitter, social, github-pages, blog, WCF]
 ---
+The new year saw some interesting developments, as I have been mentioned with my software several times throughout the web.
+
 ### Jekyll & My Blog
 I have not  yet really advertised my software or pushed to get it more widely spread, but ever since Kevin Holler [@iamkevinholler](https://twitter.com/iamkevinholler) mentioned my [jekyll-template-toolkit (JTT)][https://t.co/TWeXCgvW] on his [twitter account](https://twitter.com/iamkevinholler) the number of stargazers is skyrocking (well, not exactly, but I get more and more stargazer every week).
 

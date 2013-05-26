@@ -3,17 +3,15 @@ layout: article
 title: Tag cloud in jekyll (without plugins)
 tags: [jekyll, github, github-pages, jtt]
 categories: [Jekyll]
-excerpt: Creating a tag cloud with jekyll is not a simple task and most solutions found online use plugins for that. In this article I describe the solution I've found, which is baesd on a vanilla jekyll installation without plugins.
-author: Sebastian Teumert
 ---
+Creating a tag cloud with jekyll is not a simple task and most solutions found online use plugins for that. 
+In this article I describe the solution I've found, which is baesd on a vanilla jekyll installation without plugins.
 My solution is based around the fact that there are several math filters available for Liquid:
 	<pre>
 		{% raw %}{{5 | plus: 3}}{% endraw %} => 8
 		{% raw %}{{5 | minus: 3}}{% endraw %} => 2
 		{% raw %}{{5 | times: 3}}{% endraw %} => 15
-		{% raw %}{{6 | divided_by: 3}}{% endraw %} => 2
-	</pre>
-	
+		{% raw %}{{6 | divided_by: 3}}{% endraw %} => 2</pre>	
 More filters and documentations can be found on the [Shopify/Liquid Page](http://wiki.shopify.com/FilterReference#Math_Filters).
  		
 Although these filters are present, using them is not easy, as you can not set brackets in terms,
