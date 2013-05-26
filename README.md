@@ -5,7 +5,7 @@ This is the source code of my personal blog on http://teumert.net, hosted via
 [GitHub Pages](http://pages.github.com).
 
 I wanted a source controlled, easily maintainable, lightwheight blog. 
-[Jekyll](http://jekyllrb.com) was a good choice for that, since i could
+[Jekyll](http://jekyllrb.com) was a good choice for that, since I could
 host my page on GitHub, have it source controled and could easily add new stuff
 and the page would get automatically rebuilt.
 
@@ -16,6 +16,7 @@ The contents of the following directories are intellectual property of Sebastian
 Teumert, you may not redistribute or reuse them in any form:
 
 * `_posts/`
+* `_drafts/`
 * `assets/`
 
 All other files are subject to the following license:

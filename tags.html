@@ -2,9 +2,11 @@
 layout: page
 title: Tags
 ---
-<section class="box">
-	<h1>Tags<span class="hint" style="display:inline; width:auto;">({{site.tags.size}})</span></h1>		
-	<ul class="tagCloud">
+<section class="mainSection">
+<ul class="nav nav-list">
+<li class="nav-header"><h1>Tags <small class="pull-right">({{site.tags.size}})</small></h1></li>
+<li>
+	<ul class="inline">
 	   {% for tag in site.tags %}      
 	   <li>
 	   	<a href="tags.html#{{ tag | first | cgi_encode }}" 
@@ -14,19 +16,17 @@ title: Tags
 	</li>
 	{% endfor %}    
 	</ul>
-</section>
+</li>
 <!-- tags -->	
 {% for tag in site.tags %}
-<div class="box">
-	<h1>{{ tag | first }}<a name="{{ tag | first | cgi_escape }}"></a><span class="hint" style="display:inline; width:auto;">({{tag | last | size}})</span></h1>
-	<ul class="postList">	
-	{% for posts in tag %}
-      {% for post in posts %}
-		<li class="nested"><a href="{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }} <span>{{ post.date | date: '%d.%m.%y' }}</span></a></li>						
-	{% endfor %}{% endfor %}
-	</ul>
-</div>				
-{% endfor %}
+	<li class="nav-header">
+		<h1>{{ tag | first }}<a name="{{ tag | first | cgi_escape }}"></a><small class="pull-right">({{tag | last | size}})</small></h1>
+	</li>	
+	{% assign posts = tag | last %}
+    	{% for post in posts %}
+			<li><a href="{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }} <span class="pull-right">{{ post.date | date: '%d.%m.%y' }}</span></a></li>						
+		{% endfor %}
 	
-
-
+{% endfor %}
+</ul>
+</section>		

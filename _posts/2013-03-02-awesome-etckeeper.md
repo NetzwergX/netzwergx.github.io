@@ -1,10 +1,11 @@
 ---
 title: "Awesome etckeeper"
 layout: article
-excerpt: "The idea behind `etckeeper` is as simple as smart: Use a VCS to keep track of changes to config files in /etc/, providing you with a history, rollback options and much more."
 categories: ["Linux"]
 tags: [git, linux, etc, debian, ubuntu]
 ---
+The idea behind `etckeeper` is as simple as smart: Use a VCS to keep track of changes to config files in /etc/, providing you with a history, rollback options and much more.
+
 It is astonishing, how simple an idea can be and how much trouble it can save. Keeping the whole /etc/ folder under version control is a simple, yet elegant solution to many problems with it. Mistyped something in the config? Screwed up something? It doesn't matter anymore. Check out your latest changes and roll them back. Have forgotten why you changed _that_ setting to _this_, and why it was important? Check for the proper commit and read your own commit message explaining your change (if you were so careful to write one).
 
 Really, `etckeeper` is worth gold. You do not need `etckeeper`to keep your `/etc/` under version control, but it certainly makes it easier, providing you with a common command line interface for multiple VCS. Currently, `etckeeper` supports [`hg` (Mercurial)](http://mercurial.selenic.com/), [`git`](http://git-scm.com/), [`bzr` (Bazaar)](http://bazaar.canonical.com/en/) and [`darcs`](http://darcs.net/).

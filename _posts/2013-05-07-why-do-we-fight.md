@@ -1,11 +1,10 @@
 ---
-title: "Why do we fight -- and what for?"
+title: "Why do we fight – and what for?"
 layout: article
-excerpt: "This is the question I ask myself more often lately, seeing board discussions go sideways, parties in discussions getting mixed up in fights rather then discussions, and people constantly blaming other people for things that could be considered insignificant."
 categories: [WCF, General, Personal]
 tags: [WCF, WBB, discussion, culture, dekt]
 ---
-
+This is the question I ask myself more often lately, seeing board discussions go sideways, parties in discussions getting mixed up in fights rather then discussions, and people constantly blaming other people for things that could be considered insignificant.
 I too was that kind of guy. When someone would blame someone else for something that wasn't his fault, I'd step in, I'd set things right. Except, I know realize I wasn't. I just gave more fuel to the discussion.
 
 The ones who know me from the *WoltLab Community* (WCom) -- and by this I mean the **old** *WCom*, the one with the Plugin-Database and the separate forum that existed alongside the *WoltLab Support Forum (WSF)*, not the *WoltLab Community Forum* that exists nowadays -- will certainly have read many those threads where i participated. I sometimes criticized the team, I sometimes criticized WoltLab, but more often, i defended them. Eventually, I was asked to join the WCom Team, which I declined.
