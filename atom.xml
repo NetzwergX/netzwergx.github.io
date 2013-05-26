@@ -9,14 +9,14 @@
 	<link href="http://teumert.net/atom.xml" rel="self" />
 	<link href="http://teumert.net/" />
 	<id>http://teumert.net/</id>
-  	<updated>{% assign post = site.posts | first %}{{ post.date | date : '%Y-%m-%dT%H:%M:%S%:z'}}</updated>
+  	<updated>{{ site.time | date : '%Y-%m-%dT%H:%M:%S%:z'}}</updated>
  
 	{% for post in site.posts %}
 	<entry>
 		<title>{{ post.title }}</title>
 		<link href="http://teumert.net/{{ post.url }}" />
 		<id>http://teumert.net/{{ post.url }}</id>
-		<updated>{{ post.date | date : '%Y-%m-%dT%H:%M:%S'}}+02:00</updated>
+		<updated>{{ post.date | date : '%Y-%m-%dT%H:%M:%S%:z'}}</updated>
 		<summary type="html"><![CDATA[ {{ post.excerpt }}]]></summary>
 		<content type="html">
 			<![CDATA[{{ post.content }}]]>
