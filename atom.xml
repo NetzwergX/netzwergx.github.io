@@ -17,9 +17,9 @@
 		<link href="http://teumert.net/{{ post.url }}" />
 		<id>http://teumert.net/{{ post.url }}</id>
 		<updated>{{ post.date | date : '%Y-%m-%dT%H:%M:%S' }}+02:00</updated>
-		<summary type="html"><![CDATA[ {{ post.excerpt }}]]></summary>
+		<summary type="html"><![CDATA[ {{ post.excerpt }} ]]></summary>
 		<content type="html">
-			<![CDATA[{{ post.content }}]]>
+			<![CDATA[ {{ post.content }} ]]>
 		</content>
 	</entry>
 	{% endfor %}
