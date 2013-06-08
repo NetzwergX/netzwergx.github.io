@@ -4,9 +4,11 @@
 	<meta charset="utf-8" />
 	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->	
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
-
+	
 	<!-- Base url -->
 	<base href="{{ site.url }}" />
+	<!-- Robots -->
+	{% if page.robots %}<meta name="robots" content="{{ page.robots }}">{% else %}<meta name="robots" content="all">{% endif %}
 
 	<!-- Meta Information -->
 	<title>{{ page.title }} {% if paginator != nil %} &ndash; Page {{ paginator.page}} {% endif %}&ndash; Sebastian Teumert</title>
@@ -93,11 +95,12 @@
 	</header>	
 
 	<div class="row main">
-		<section class="span9">					
+		<div class="span9">					
 			{{ content }}
-		</section>
-		<aside class="span3" id="sidebar">				
-			<nav class="sidebar-nav">		
+		</div>
+		<aside class="span3" id="sidebar">	
+			<header><h3 style="display: none">Navigation</h3>	</header>			
+			<nav class="sidebar-nav">							
 				<ul class="nav nav-list">
 					{% include widgets/categoryList.html %}
 					<li class="divider"></li>				
@@ -110,7 +113,7 @@
 					<li><a href="software.html">My Software</a></li>								
 					<li class="divider"></li>
 					<li><a href="sitemap.html">Sitemap</a></li>
-					<li><a href="impressum.html">Impressum</a></li>
+					<li><a href="impressum.html" rel="nofollow">Impressum</a></li>
 				</ul>
 			</nav>					
 		</aside>

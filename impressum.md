@@ -1,20 +1,20 @@
 ---
 layout: article
 title: Impressum
+robots: noindex
 ---
 _Note:_
 This page is needed for compliance to german law and is therefore provided in german only.
 
-
 Angaben nach §5 TMG:
 --------------------
-
 Sebastian Teumert  
 Ulmenweg 10  
 59514 Welver  
 
-E-Mail: <sebastian.teumert@gmx.de>  
-Internet: <http://www.teumert.net>  
+Telefon:	0160 – 22713131  
+E-Mail: 	<sebastian.teumert@gmx.de>  
+Internet: 	<http://www.teumert.net>  
 
 
 Dieses Impressum gilt für die Domain _teumert.net_.
