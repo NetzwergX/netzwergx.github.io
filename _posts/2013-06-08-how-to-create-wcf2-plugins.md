@@ -32,7 +32,7 @@ Typically, a package.xml would look like this:
 		<packagename>WCF2 Example Plugin</packagename>
 		<packagedescription>This plugin is used for demonstrational purposes.</packagedescription>
 		<version>1.0.0 Alpha 1</version>
-		<date>{{ post.time | date: '%Y-%m-%d' }}</date>			
+		<date>2013-08-09</date>			
 	</packageinformation>
 
 	<authorinformation>
@@ -139,7 +139,7 @@ data from the database that we will display.
 		<packagename>Hello, World!</packagename>
 		<packagedescription>A variant of he Hello, World! sample for WCF 2.0</packagedescription>
 		<version>1.0.0 Alpha 1</version>
-		<date>{{ post.time | date: '%Y-%m-%d' }}</date>			
+		<date>2013-06-08</date>			
 	</packageinformation>
 
 	<authorinformation>
@@ -243,7 +243,7 @@ can simply copy the `HelloWorld.class.php` to `WCF_DIR\lib\page\HelloWorld.class
 and the template to `WCF_DIR\templates\helloWorld.tpl` and your page will be available
 under `index.php/HelloWorld/` and should look like this:
 
-		TODO: capture screenshot!
+![Screenshots of HelloWorld-Page](/assets/images/Hello_World_Page.png "Hello, World!")
 
 #### Creating the plugin
 
@@ -262,7 +262,7 @@ be named `templates.tar`).
 At last, pack the `files.tar`, `templates.tar` and `package.xml` in an archive and
 you are done. You now have an installable package. You can download an already packed
 reference version of this plugin under 
-[downloads/org.example.wcf.page.helloworld.tar](https://teumert.net/assets/downloads/org.example.wcf.page.helloworld.tar).
+[downloads/org.example.wcf.page.helloworld.tar](/assets/downloads/org.example.wcf.page.helloworld.tar).
 
 #### Organizing development smart and building packages automagically
  
