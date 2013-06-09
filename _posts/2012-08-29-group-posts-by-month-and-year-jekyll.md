@@ -77,6 +77,7 @@ post, we will always have to generate the list for the year and the month of tha
 the month and year list have to be closed when looking at the last post.
 
 The other two possible cases are: 
+
 * Month changes
 * Year changes
 
@@ -164,7 +165,7 @@ So, having all this laid out and considered, the implementation is quite simple:
 						</ul>
 					</li>
 					<!-- /year -->		
-		   {% endif %}		   		   		
+		   {% endif %}
 		{% endfor %}														
 		</ul>	
 		
