@@ -10,7 +10,7 @@ title: Categories
 	
 		{% assign posts = category | last %}
       {% for post in posts %}
-		<li><a href="{{ post.url }}" title="{{ post.excerpt }}">{{ post.title }} <span class="pull-right">{{ post.date | date: '%d.%m.%y' }}</span></a></li>						
+		<li><a href="{{ post.url }}" title="{{ post.excerpt | strip_html }}">{{ post.title }} <span class="pull-right">{{ post.date | date: '%d.%m.%y' }}</span></a></li>						
 	{% endfor %}	
 				
 {% endfor %}
