@@ -3,6 +3,7 @@
 /*
  * teumert.net Website Styles
  * (c) 2012-2013 Sebastian Teumert. All rights reserved.
+ * DO NOT REDISTRIBUTE!
  *
  */
 
@@ -12,7 +13,7 @@ body, input, button, select, textarea, .navbar-search .search-query {
 }
 
 body, html {
-	background-color: #eee;	
+	background: #eee;	
 	color:#000;
 }
 
@@ -20,31 +21,8 @@ h1 a {
 	color: #000;
 }
 
-h1 a:hover {
-	text-decoration: none;
-}
-
-
-header {
-	margin-top: 1.6em;
-}
-
-#header h1 {
-	font-size: 3em;
-}
-
-header h1 small {
-	color: #333; #708090;
-	font-size: 0.4em;
-	font-style: italic;
-}
-
-header h1 small a {
-	color: #0088cc;		
-}
-
-.page-header {
-	margin: 0;
+h1 a:hover, h1 a {
+	text-decoration: none !important;
 }
 
 .nav-header h1, .nav-header h2 {
@@ -56,16 +34,12 @@ ul.inline {
 	display: inline;
 }
 
-.nav-list .divider {
-	background-color: #d5d5d5;
-	border-bottom: 1px solid #eee;
+header .hero-unit {	
+	padding: 0;
+	margin: 0;
 }
 
-.main {
-	margin-top: 0.8em;
-}
-
-article, .mainSection {
+article, section#main {
 	text-align: justify;	
 	margin-bottom: 2em;
 	padding: 25px 50px;
@@ -79,17 +53,24 @@ article h1, article h2, article h3 {
 	border-bottom:1px dashed #d3d3d3;
 }
 
+article img {
+	box-shadow: 0 3px 5px #999;
+	padding: 7px;
+	background: #dfdfdf;
+	border: 1px solid #bbb;
+}
+
+article a {
+	text-decoration: underline;
+}
 
 article footer {
 	border-top: 1px solid #d3d3d3;
 }
 
-.sidebar-nav li {
-	text-transform: uppercase;
-}
-
-.sidebar-nav li.nav-header {
-	font-size: 1em;	
+.pager li>a, .disabled>a:focus, .pager .disabled>span {
+	background-color: #eee;	
+	border:0;
 }
 
 footer, time {
@@ -103,25 +84,40 @@ footer, time {
 	text-align: center;	
 }
 
+@media (max-width: 767px) {
+	article { 
+		padding: 25px;
+	}
+}
+
 /* 
  * Print styles 
  */
 @media print {
-	article footer, #sidebar, .nav, .pagination {
-		display: none;
-	}
-
+	
 	article {
 		padding: 0;
 	}	
 
-	.noprint {
+	.hidden-printer {
 		display:none !important;
+	}
+	
+	.visible-printer {
+		display: block;
 	}
 
 	#footer {
 		text-align: justify;
 	}
+	
+	a[href]:after {
+    	content: "";
+  	}
+
+  	abbr[title]:after {
+    	content: "";
+  	}  	
 }
 
 

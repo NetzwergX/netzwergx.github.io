@@ -9,12 +9,9 @@ files, following bogus installation and hacking instructions, this is all long
 gone. Since WBB3, which was built on top of WCF1, hacking is obsolete and was
 replaced by simply installing plugins via mouse-click in the ACP. The general 
 principle is the same for WCF2 as it was for WCF1, but some detailes have
-changed. So how do we create plugins for WCF2 & WBB4?
-
-General structure
------------------
-
-So what is a *plugin*? Basically, just a TAR- or TGZ- archive that contains
+changed.  
+### So what is a *plugin*?  
+Basically, just a TAR- or TGZ- archive that contains
 some files in a specific structure. The heart of each plugin is the
 `package.xml`, a configuration file which defines the plugins dependencies and
 it's delivered functionality. The `package.xml` file is placed in the root of 
