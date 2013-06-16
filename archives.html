@@ -15,11 +15,11 @@ title: Archives
 
 			{% if forloop.first %}				
 					<!-- year -->
-					<li class="nav-header"><h1 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h1></li>
+					<li class="nav-header"><h2 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2></li>
 					<li>		
 						<ul class="nav nav-list">
 							<!-- month -->
-							<li class="nav-header"><h2 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h2></li>
+							<li class="nav-header"><h4 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h4></li>
 							<li>	
 								<ul class="nav nav-list">			
 			{% else %}
@@ -32,11 +32,11 @@ title: Archives
 					</li>
 					<!-- /year -->
 					<!-- year -->
-					<li class="nav-header"><h1 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h1></li>
+					<li class="nav-header"><h2 id="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</h2></li>
 					<li>	
 						<ul class="nav nav-list">
 							<!-- month -->
-							<li class="nav-header"><h2 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h2></li>
+							<li class="nav-header"><h4 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h4></li>
 							<li>					
 								<ul class="nav nav-list">		
 					{% elsif month != nmonth %}
@@ -44,7 +44,7 @@ title: Archives
 							</li>						
 							<!-- /month -->	
 							<!-- month -->
-							<li class="nav-header"><h2 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h2></li>
+							<li class="nav-header"><h4 id="{{ post.date | date: '%Y-%B' }}">{{ post.date | date: '%B' }}</h4></li>
 							<li>					
 								<ul class="nav nav-list">												
 					{% endif %}					

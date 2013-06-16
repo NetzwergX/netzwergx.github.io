@@ -49,7 +49,7 @@ article, section#main {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
-article h1, article h2, article h3 {
+article h1, article h2, #main h1, #main h2 {
 	border-bottom:1px dashed #d3d3d3;
 }
 
@@ -68,9 +68,26 @@ article footer {
 	border-top: 1px solid #d3d3d3;
 }
 
-.pager li>a, .disabled>a:focus, .pager .disabled>span {
-	background-color: #eee;	
+.pager li>a, .disabled>a:focus, .pager .disabled>span, .pager li>a:hover {
+	background-color: inherit;	
 	border:0;
+}
+
+dl {
+	width: 50%;
+}
+dt {
+	float: left;
+	width: 200px;
+}
+
+dt:after {
+	content: ':';
+}
+
+dd {
+	
+	margin-left: 250px;
 }
 
 footer, time {
@@ -94,7 +111,7 @@ footer, time {
  * Print styles 
  */
 @media print {
-	
+
 	article {
 		padding: 0;
 	}	

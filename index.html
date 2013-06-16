@@ -3,21 +3,7 @@ layout: page
 title: Home
 excerpt: "personal tech / dev blog - read about me, my software and the many technologies I use."
 ---
-{% for post in paginator.posts %}
-  <article>
-  	<header>
-		<time datetime="{{post.date | date: "%Y-%m-%d"}}" title="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%d.%m.%Y"}}</time>					
-		<h1><span><a href="{{post.url}}" title="Read more about '{{ post.title }}'">{{ post.title }}</a></span></h1>
-	</header>	
-	{{ post.excerpt | markdownify }}	
-	<p class="text-right"><em><a href="{{ post.url }}" title="Read more about '{{ post.title }}'">Read more &hellip;</a></em></p>
-	<footer>			
-		{% include widgets/postCategoryList.html %}
-		{% include widgets/postTagList.html %}		
-	</footer>	
-	</article>
-{% endfor %}
-
+{% capture pager %}
 <ul class="pager">
 {% if paginator.previous_page %}
 	<li class="previous">
@@ -36,4 +22,24 @@ excerpt: "personal tech / dev blog - read about me, my software and the many tec
 	<li class="next disabled"><span>Older &rarr;</span></li>
 {% endif %}
 </ul>
+{% endcapture %}
+
+{{ pager }}
+
+{% for post in paginator.posts %}
+  <article>
+  	<header>
+		<time datetime="{{post.date | date: "%Y-%m-%d"}}" title="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%d.%m.%Y"}}</time>					
+		<h1><span><a href="{{post.url}}" title="Read more about '{{ post.title }}'">{{ post.title }}</a></span></h1>
+	</header>	
+	{{ post.excerpt | markdownify }}	
+	<p class="text-right"><em><a href="{{ post.url }}" title="Read more about '{{ post.title }}'">Read more &hellip;</a></em></p>
+	<footer>			
+		{% include widgets/postCategoryList.html %}
+		{% include widgets/postTagList.html %}		
+	</footer>	
+	</article>
+{% endfor %}
+
+{{ pager }}
 

@@ -11,10 +11,12 @@ Ulmenweg 10
 59514 Welver  
 
 ### Sonstige Angaben
-Telefon:	0160 – 22713131  
-E-Mail: 	<sebastian.teumert@gmx.de>  
-Internet: 	<http://teumert.net>  
-
+<dl>
+	<dt>Telefon</dt><dd>&#48;&#49;&#54;&#48;&#32;&#8211;&#32;&#50;&#50;&#55;&#49;&#51;&#49;&#51;&#49;</dd>
+	<dt>E-Mail</dt><dd><a href="mailto:&#115;&#101;&#98;&#97;&#115;&#116;&#105;&#97;&#110;&#46;&#116;&#101;&#117;&#109;&#101;&#114;&#116;&#64;&#103;&#109;&#120;&#46;&#100;&#101;">
+	&#115;&#101;&#98;&#97;&#115;&#116;&#105;&#97;&#110;&#46;&#116;&#101;&#117;&#109;&#101;&#114;&#116;&#64;&#103;&#109;&#120;&#46;&#100;&#101;</a></dd>
+	<dt>Internet</dt><dd><a href="/index.html">http://teumert.net</a></dd>
+</dl>
 ### Verantwortlich gemäß § 10 Abs. 3 MDStV
 Sebastian Teumert (Anschrift wie oben)
 

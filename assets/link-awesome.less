@@ -14,7 +14,8 @@
 	&:before {
 		&:extend([class^="icon-"] all);
 		content: "@{icon}\202F";
-		/*margin-right: .3em;*/ /* this sadly breaks underlines, so we use &nbsp; */	
+		/*margin-right: .3em;*/ 
+		/* this sadly breaks underlines, so we use &nbsp; */	
 	}
 }  
 
@@ -22,84 +23,97 @@
 
 	/* --- social ---*/
 	
+	a[href*="bitbucket.com"] {
+		.iconify("\f171");
+	}	
+	
 	a[href*="dribble.com"] {
-		.iconify("\f09b");
+		.iconify("\f17d");
 	}
 	
-	a[href*="dropbox.com"], 
-	a[href^="https://dropbox.com"] {
-		.iconify("\f09b");
+	a[href*="dropbox.com"] { 	
+		.iconify("\f16b");
 	}
 	
 	a[href*="facebook.com"] {
-		.iconify("\f09b");
+		.iconify("\f09a");
 	}
 	
 	a[href*="flickr.com"] {
-		.iconify("\f09b");
+		.iconify("\f16e");
 	}
 	
 	a[href*="foursquare.com"] {
-		.iconify("\f09b");
+		.iconify("\f180");
 	}
 	
 	a[href*="github.com"] {
 		.iconify("\f09b");
 	}
 	
+	a[href*="gittip.com"] {
+		.iconify("\f184");
+	}
+	
 	a[href*="plus.google."] {
-		.iconify("\f09b");
+		.iconify("\f0D5");
 	}
 	
 	a[href*="instagram.com"] {
-		.iconify("\f09b");
+		.iconify("\f16d");
 	}
 	
 	a[href*="linkedin.com"] {
-		.iconify("\f09b");
+		.iconify("\f0e1");
 	}
 	
-	a[href*="pinterest.com"], 
-	a[href^="https://pinterest.com"] {
-		.iconify("\f09b");
+	a[href*="pinterest.com"] {	
+		.iconify("\f0d2");
 	}
 	
 	a[href*="renren.com"] {
-		.iconify("\f09b");
+		.iconify("\f18b");
 	}
 	
 	a[href*="skype.com"] {
-		.iconify("\f09b");
+		.iconify("\f17e");
 	}
 	
-	a[href*="stackexchange.com"] {
-		.iconify("\f09b");
+	a[href*="stackexchange.com"],
+	a[href*="stackoverflow.com"],
+	a[href*="serverfault.com"],
+	a[href*="superuser.com"] {
+		.iconify("\f16c");
 	}
 	
 	a[href*="trello.com"] {
-		.iconify("\f09b");
+		.iconify("\f181");
 	}
 	
 	a[href*="tumblr.com"] {
-		.iconify("\f09b");
+		.iconify("\f173");
 	}
-	
-	a[href*="weibo.com"] {
-		.iconify("\f09b");
-	}
-	
-	a[href*="xing.com"] {
-		.iconify("\f09b");
-	}
-	
-	a[href*="youtube.com"] {
-		.iconify("\f09b");
-	}
-	
-	/* TODO: youtube play icon? */
 	
 	a[href*="twitter.com"] {
 		.iconify("\f099");
+	}
+	
+	a[href*="weibo.com"] {
+		.iconify("\f18a");
+	}
+	
+	a[href*="xing.com"] {
+		.iconify("\f168");
+	}
+	
+	a[href*="youtube.com"],
+	a[href*="youtu.be"] {
+		.iconify("\f167");
+	}
+	
+	a[href*="youtube.com/watch?"],
+	a[href*="youtu.be/watch?"] {
+		.iconify("\f16a");
 	}
 	
 	/* --- file types --- */
@@ -108,7 +122,7 @@
 	/* documents */
 	a[href$=".pdf"], 
 	a[href$=".doc"], a[href$=".docx"] {
-		.iconify("\f099"); /* icon-file-text-alt */
+		.iconify("\f0f6"); /* icon-file-text-alt */
 	}
 	
 	/* images */
@@ -121,7 +135,7 @@
 	a[href$=".ico"], a[href$=".ICO"], 
 	a[href$=".tga"], a[href$=".TGA"], 
 	a[href$=".tiff"], a[href$=".TIFF"] {
-		.iconify("IMG"); /* icon-camera */
+		.iconify("\f030"); /* icon-camera */
 	}
 	
 	/* downloads, e.g. archives */
@@ -134,14 +148,18 @@
 	a[href$=".so"], a[href$=".SO"], 
 	a[href$=".exe"], a[href$=".EXE"],
 	a[href^="ftp://"] {
-		.iconify("DL"); /* icon-download-alt */
+		.iconify("\f019"); /* icon-download-alt */
 	} 
 	
 	a[href$=".rss"], a[href$=".atom"] {
-		.iconify(""); /* icon-rss */
+		.iconify("\f09E"); /* icon-rss */
 	}
 	
 	a[href$=".xml"], a[href$=".xls"], a[href$=".xlsx"] {
-		/* icon-code */
+		.iconify("\f121");/* icon-code */
 	}
+	
+	/* 	sadly, we can not use icon stacks here, otherwise stacking 
+		icon-coffee on icon-file-alt would be great for .java files :D 
+	*/
 }
