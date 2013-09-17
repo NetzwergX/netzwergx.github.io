@@ -1,45 +1,69 @@
----
-layout: page
-title: Home
-excerpt: "personal tech / dev blog - read about me, my software and the many technologies I use."
----
-{% capture pager %}
-<ul class="pager">
-{% if paginator.previous_page %}
-	<li class="previous">
-		{% if paginator.previous_page == 1 %}<a href="/">&larr; Newer</a>
-		{% else %}<a href="{{ paginator.previous_page_path }}">&larr;</a>{% endif %}
-	</li>
-{% else %}
-	<li class="previous disabled"><span>&larr; Newer</span></li>
-{% endif %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />	
+	
+	<!-- Base url -->
+	<!--<base href="" />-->
+	<!-- Robots -->
+	<meta name="robots" content="all">
 
-<li><a href="archives.html"> — Archives — </a></li>
+	<!-- Meta Information -->
+	<title>Sebastian Teumert - Portfolio</title>
+	<meta name="description" content="Sebastian Teumert - Freier Software-Entwickler - Business Applications & Webentwicklung - Java, PHP, HTML5, CSS3, JS, WBB, WCF" />	
+	<meta name="keywords" content="software, bussiness, applications, anwendungen, programme, wcf, wbb, web, webentwicklung, java, php, html5, css3, js, seo, semantic markup" />	
+	<meta name="author" content="Sebastian Teumert" />	
+	
+	<!-- Responsive and mobile friendly stuff -->
+	<meta name="HandheldFriendly" content="true" />
+	<meta name="MobileOptimized" content="320" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-{% if paginator.next_page %}
-	<li class="next"><a href="{{ paginator.next_page_path }}">Older &rarr;</a></li>
-{% else %}
-	<li class="next disabled"><span>Older &rarr;</span></li>
-{% endif %}
-</ul>
-{% endcapture %}
-
-{{ pager }}
-
-{% for post in paginator.posts %}
-  <article>
-  	<header>
-		<time datetime="{{post.date | date: "%Y-%m-%d"}}" title="{{post.date | date: "%Y-%m-%d"}}">{{post.date | date: "%d.%m.%Y"}}</time>					
-		<h1><span><a href="{{post.url}}" title="Read more about '{{ post.title }}'">{{ post.title }}</a></span></h1>
-	</header>	
-	{{ post.excerpt | markdownify }}	
-	<p class="text-right"><em><a href="{{ post.url }}" title="Read more about '{{ post.title }}'">Read more &hellip;</a></em></p>
-	<footer>			
-		{% include widgets/postCategoryList.html %}
-		{% include widgets/postTagList.html %}		
-	</footer>	
+	<!--Favicon -->
+	<link rel="shortcut icon" href="favicon.png" />
+	<link rel="icon" type="image/x-icon" href="favicon.png" />
+	
+	<link href="teumert.net.css" rel="stylesheet" />	
+</head>
+<body style="width: 50%; margin: 5em auto;">	
+	<article>
+		<header>
+			<h1>Sebastian Teumert</h1>	
+			<p>Freier Software-Entwickler & IT Freelancer</p>
+			<p><small><!--&mdash;--> Business Applications & Webentwicklung</small></p>
+		</header>
+		<h3>Neues Portfolio in Entwicklung <time datetime="2013-09-17" style="float:right;">17.09.2013</time></h3>
+		<p>Hier entsteht in Kürze mein neues Portfolio, in dem ich meine bisherigen Arbeiten präsentieren werde, sowie Neuigkeiten
+		rund um die von mir entwickelte und vertriebene Software.</p>
+		<h4>Was ändert sich?</h4>
+		<p>Da ich künftig den Hauptschwerpunkt meiner beruflichen Arbeit auf den deutschsprachigen Raum setzen werde, wird die
+		Hauptseite künftig auch in Deutsch angeboten werden. Meine bestehenden englischen Blogeinträge werden in Kürze unter
+		der Domain <a href="http://en.teumert.net/" title="Englische Version der Seite">en.teumert.net</a> zu finden sein.
+		Naürlich werde ich auch weiterhin englische Artikel veröffentlichen, allerdings werden künftig Inhalte immer
+		nur noch in beiden Sprachen erscheinen. Auch wird meine Arbeit an Open-Source Projekten im englischsprachigem Raum
+		weitergehen. Auch wird meine Software z.B. im WoltLab Plugin Store selbstverständlich auch mehrsprachig angeboten werden.
+		</p>
+		<h4>Neue Webpräsenz</h4>
+		<p>Als weitere Besonderheit werde ich meinen Blog nochmals überarbeiten - künftig wird das Portfolio deutlich stärker
+		in den Mittelpunkt rücken, während Neuigkeiten rund um meine Software und sonstige Artikel besser getrennt werden.
+		Außerdem wird die Webpräsenz wieder komplett "from scratch" aus meiner eigenen Feder stammen - Twitter Bootstrap war
+		ein netter Ansatz, jedoch haben sich da zu viele Nachteile herauskristallisiert - doch das wird Thema eines neuen
+		Blogeintrages sein.</p>
+		<h4>Moment - Was ist mit dem Jekyll Template Toolkit / Jekyll Boilerstrap?</h4>
+		<p>Jekyll Boilerstrap wird es nicht mehr geben. Ich werde jedoch JTT weiterentwickeln, und dabei daraus achten, auch CSS
+		Klassen semantisch zu vergeben - dies ist auch eines der probleme von Twitter Bootstrap - zu viel Bloat / Ballast bei den
+		CSS Klassen, und keine "Sinnvolle" verwendung derselben. Ich glaube, ich kann an dieser Stelle ein deutlich besseres Ergebnis
+		erzielen in Punkte Größe, Wartbarkeit, Anpassbarkeit (Individualisierbarkeit) und Stil, wenn ich mich hier nur einigen wenigem,
+		selbst geschriebem CSS widme.</p>		
 	</article>
-{% endfor %}
-
-{{ pager }}
-
+	
+	<footer id="footer">
+		&copy; 2012 &ndash; 2013 <a href="http://teumert.net/impressum.html">Sebastian Teumert</a>
+		&ndash;
+		hosted on <a href="http://pages.github.com">GitHub Pages</a>.
+	</footer>
+	
+</body>
+</html>
