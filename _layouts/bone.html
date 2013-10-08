@@ -6,7 +6,7 @@
 	
 	<!-- Meta Information -->
 	<title>{% if page.heading %}{{ page.heading }} &ndash; {% endif %}{{ page.title }}</title>
-	<meta name="description" content="{% if page.description %} {{ page.description }}{% elsif page.excerpt %}{{ page.excerpt }}{% endif %}" />
+	<meta name="description" content="{% if page.description %} {{ page.description | strip_html }}{% elsif page.excerpt %}{{ page.excerpt | strip_html }}{% endif %}" />
 	{% if page.tags %}
 	<meta name="keywords" content="{{ page.tags | array_to_sentence_string }}" />
 	{% endif %}
