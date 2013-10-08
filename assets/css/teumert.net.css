@@ -1,0 +1,194 @@
+@charset("UTF-8");
+
+/*
+ * teumert.net Website Styles
+ * (c) 2012-2013 Sebastian Teumert. All rights reserved.
+ * DO NOT REDISTRIBUTE!
+ *
+ */
+
+/* ----- General----- */
+
+body, input, button, select, textarea, search {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1em;
+}
+
+body, html {
+	background: #eee;	
+	color:#000;
+}
+
+body {
+	max-width: 1000px;
+	margin: 3em auto;
+}
+
+code {
+	font-size: .9em;
+}
+
+/* ----- Links----- */
+
+a, a:visited, a:link {
+	color: #08c;
+}
+
+a:hover {
+	color: #00baff;
+}
+
+/* ----- Navigation----- */
+
+ul.nav {	
+	float: right;	
+}
+
+ul.nav li {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+ul.nav li:last-child {
+	margin-right: 0;
+}
+
+ol.breadcrumbs {
+	padding-left: 0;
+}
+
+ol.breadcrumbs li {
+	display: inline-block;
+}
+
+ol.breadcrumbs li:after {
+	content: '\00BB';
+}
+
+/* ----- Article / Content----- */
+
+article, section#content {
+	text-align: justify;	
+	margin-bottom: 2em;
+	padding: 2em 4em;
+	background-color: #fff;
+	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
+}
+
+article h1, article h2, #content h1, #content h2, article h3 {
+	border-bottom:1px dashed #d3d3d3;
+}
+
+article img {
+	box-shadow: 0 3px 5px #999;
+	padding: 7px;
+	background: #dfdfdf;
+	border: 1px solid #bbb;
+	max-width: 100%;
+}
+article footer {
+	border-top: 1px solid #d3d3d3;
+}
+
+/* ----- Misc ----- */
+
+h1 time, h2 time, h3 time {
+	float: right;
+	margin-left: 1em;
+}
+
+dl {
+	width: 100%;
+}
+dt {
+	float: left;
+	width: 200px;
+}
+
+dt:after {
+	content: ':';
+}
+dd {	
+	margin-left: 250px;
+}
+
+footer, time {
+	color: #708090;
+}
+
+/* Util */
+
+.right {
+	float: right;
+}
+
+/* ----- Footer----- */
+
+#footer {
+	margin-bottom: 1.6em;
+	padding-top: 0.8em;
+	border-top: 1px solid #d3d3d3;	
+	text-align: center;	
+}
+
+/* ----- Blog specific ----- */
+
+ul#blog {
+	padding: 0;
+	list-style-type: none;
+}
+
+ul#blog ul {
+	list-style-type: none;
+}
+	
+ul#blog a time {
+	margin-left: 1.5em;
+}
+
+/* ----- Responsible stuff----- */
+
+@media (max-width: 767px) {
+	body {
+		width: 90%;
+		margin: 1em auto;
+	}
+	
+	article { 
+		padding: 2em;
+	}
+	
+	ul.nav {
+		width: 100%;
+		margin: 0;
+	}
+	
+	ul.nav li {
+		margin: .5em auto;
+		width: 49%;
+	}
+}
+
+/* ----- Print styles----- */
+
+@media print {	
+	body, html {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+		background: #fff;
+	}
+	
+	nav {
+		display: none;
+	}
+	
+	article, section#content {
+		padding: 0;
+		-webkit-box-shadow: none;
+		-moz-box-shadow:none;
+		box-shadow: none;
+	}
+}

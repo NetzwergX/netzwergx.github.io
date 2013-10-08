@@ -1,0 +1,41 @@
+permalink: /:categories/:year-:month-:day-:title.html
+url: /
+exclude: [README.md]
+timezone: Europe/Berlin
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "underline", "highlight"]
+  
+author: 
+  name: "Sebastian Teumert"
+  href: "/index.html"
+  email: "sebastian.teumert@gmx.de"
+
+lang:
+  default: de
+  de:
+    lang: "Deutsch"
+    nav:			
+      start: "Start"
+      about: "Über mich"
+      software: "Software"
+      blog: "Blog"
+    breadcrumb.blog: "Blog"
+    blog:
+      year: "Nachrichten & Artikel"
+    article:
+      by: 'verfasst von'
+      time: 'am'
+  en:
+    lang: "English"
+    nav: 			
+      start: "Home"
+      about: "About me"
+      software: "Software"
+      blog: "Blog"
+    breadcrumb.blog: "Blog"
+    blog:
+      year: "News & Articles"
+    article:
+      by: 'written by'
+      time: 'on'
