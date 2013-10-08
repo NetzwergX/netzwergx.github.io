@@ -104,14 +104,14 @@ dl {
 }
 dt {
 	float: left;
-	width: 200px;
+	width: 50%;
 }
 
 dt:after {
 	content: ':';
 }
 dd {	
-	margin-left: 250px;
+	margin-left: 50%;
 }
 
 footer, time {
