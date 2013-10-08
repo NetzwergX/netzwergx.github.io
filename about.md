@@ -1,47 +1,58 @@
 ---
-layout: article
-title: About me
-excerpt: About Sebastian Teumert, my software, interests, contact info and information about my blog.
+layout: bcpage
+title: "Über mich"
+excerpt: "Über Sebastian Teumert, meine Software und Interessen sowie Informationen über meinen Blog"
+lang: de
+alt: [en]
 ---
-My name is Sebastian, I am mid-twenty and student of computer science at a technical university.
+<p>Mein Name ist Sebastian Teumert, und ich entwerfe und entwickle Web-Applikationen, Webseiten und eigenständige
+Java-Anwendungen. Dabei setze ich auf die Einhaltung moderner Standard, Abwärtskompatibilität zu älteren Geräten
+(und älterer  Software), Barrierefreiheit und auf sauberen, wartbaren und wiederverwendbaren Quellcode sowie formale
+Entwurfsmethoden.</p>
+<p>Ich studiere an der TU Dortmund (theoretische) Informatik und beschäftige mich in meiner Freizeit gerne mit
+mathematischen Fragen zum Zufall, mit Fragen des automatischen Planens und mit formalen methoden der Logik und 
+theoretischen Informatik.</p>
 
-While learning theoretical computer science is a hell of a lot of fun, I often find myself in the
-need to do some 'actual, real stuff' and just code things, be it either in Java (my beloved language),
-PHP (this one is a hate-love) or Haskell (which is really great for rapid prototyping and has a **very**
-expressive syntax), or be it creating & designing a new web site. Since last year, I am also a blogger.
+<h3>Beruflich</h3>
+<p>Ich bin seit Mitte 2013 im Bereich Software-Entwicklung selbständig tätig. Dabei liegt mein Schwerpunkt derzeit v.a.
+auf Arbeiten im Web-Bereich, v.a. mit PHP. Dabei verwende ich moderne Ansätze und Techniken, um zukunftssichere Software
+erstellen zu können, und meinen Kunden nachhaltige Produkte liefern zu können. V.a. im Bereich WBB & WCF Entwicklung habe ich
+mir durch jahrelange OpenSource-Arbeit bereits einen Namen machen können.</p>
 
-While I have the most experience in Java (almost ten years now), the programming language I have released
-most software in is PHP. This is mostly due to the fact that PHP can be easier deployed then Java, and partial
-due to the fact that I had different web sites and created that software for my own needs.
+<h3>Qualifikationen</h3>
+<p>Ich bin im Bereich Software-Entwcklung seit mehr als 10 Jahren tätig, davon seit 7 Jahren mit Beiträgen zu diversen
+OpenSource-Projekten. Ich habe fast zehn Jahre Erfahrung mit Java sowie sechs Jahre Erfahrung mit PHP. Im Bereich WCF & WBB
+kann ich auf über 5 Jahre semi-professioneller Plugin- und Applikationsentwicklung zurückblicken.</p>
 
-Most of the time I worked with WCF 1.1 (and before that WCF 1.0), and I will continue to realease software
-for WCF 2.0. Lately I have gotten more and more interested in Liquid and created the 'Jekyll Template Toolkit',
-a collection of liquid templates designed for the use of vanilla jekyll, thus runnable on GitHub Pages.
+<h3>Qualität</h3>
+<p>Meine eigenen Qualitätsansprüche sind sehr hoch, auch darum bemühe ich mich immer, auf dem aktuellen Stand der Technik zu
+bleiben und entwickle mich ständig weiter. Besonders wichtig sind für mich intuitives Design sowie einfache Bedienung, 
+im Web-Bereich auch Unterstützung von diversen Endgeräten (Desktop-Computer, Laptops, Tablet, Smartphone, bekannt unter dem
+Schlagwort "responsive Design") sowie sematisches Markup.
+</p>
 
-I have released a number of [open source projects on Github](http://www.github.com/NetzwergX) and in the
-[WoltLab Plugin-Store](http://www.woltlab.com/pluginstore/plugins.html?userID=1337633). You can also check out 
-[my software portfolio](http://teumert.net/software.html) to browse some of my favorite creations.
+<h3>Referenzen</h3>
+<p>Meine bisherigen Projekte, einige kommerzieller Natur, andere OpenSource, habe ich in einem Portfolio zusammengefasst.<br/>
+Stöbern erwünscht!</p>
 
-### Contact & Hire me
+Über diese Seite
+----------------
 
-If you are interested in hiring me for a WCF 2.0 plugin, a Java application or the creation of a (responsive)
-web site, you can contact me via email to <sebastian.teumert@gmx.de>.
+Die Einträge (oder, wie ich es bevorzuge, *Artikel*) auf dieser Seite sind zum aller größten Teil in reinem 
+[Markdown](http://daringfireball.net/projects/markdown/) geschrieben und dann mit [Jekyll](http://jekyllrb.com) zu HTML
+transformiert worden.
+Die Templates für diesen Blog sind OpenSource und als Teil des
+[Jekyll Template Toolkit](https://github.com/NetzwergX/jekyll-template-toolkit), welches ich entwickle, zum Download
+verfügbar.
 
-About this site
----------------
+Gehostet wird diese Seite auf [GitHub Pages](http://pages.github.com), einem Dienst von den unglaublich einfallsreichen 
+Entwicklern von [GitHub](http://github.com).
 
-The posts (or, as I prefer to call them, *articles*) on this site are crafted in pure
-[Markdown](http://daringfireball.net/projects/markdown/), and then renderd via [Jekyll](http://jekyllrb.com).
-The templates used in this blog are open sourced and part of the 
-[Jekyll Template Toolkit](https://github.com/NetzwergX/jekyll-template-toolkit) which I maintain.
+Obwohl *fast alles* in meinem Blog 
+[unter der MIT Lizenz lizensiert ist](https://github.com/NetzwergX/netzwergx.github.com#license), würde ich es dennoch begrüßen,
+wenn zu mir zurück verlinkt wird, über mich oder meine Software getwittert oder in sonst einer Form auf mich hingewiesen wird,
+wenn meine Software verwendet wird. Danke!
 
-The blog is hosted on [GitHub Pages](http://pages.github.com), a service by the awesome guys over at
-[GitHub](http://github.com).
-
-Although *almost* everything in my blog is 
-[licensed under the MIT license](https://github.com/NetzwergX/netzwergx.github.com#license), I would
-appreciate it if you link back to me, or tweet about me, or share the fact that you use some of my software
-elsewhere. Thanks!
-
-I make all of the contents available at no charge, without ads on the site, just for the better of the online
-community. Please **do not** reproduce the contents of any of my articles without asking me *first*.
+Ich mache viele Inhalte in meinem Blog kostenfrei verfügbar, ohne Werbung auf der Seite,  einfach um etwas zur Online-Community, 
+von derer vielen frei verfügbaren Webseiten ich ebenso profitiere, etwas zurückzugeben. Doch gerade deshalb bitte ich darum, 
+auch mein geistiges Eigentum zu achten und keinerlei Inhalte meiner Artikel zu reproduzieren, ohne mich *vorher* danach zu fragen.

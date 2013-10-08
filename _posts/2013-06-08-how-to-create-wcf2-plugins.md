@@ -1,8 +1,9 @@
 ---
 title: "How to: Create WCF 2 Plugins"
 layout: article
-categories: [WCF]
+categories: [en, WCF]
 tags: [wcf2, wcf, how to, tutorial, package, plugin]
+lang: en
 ---
 Customizing your WBB4 / WCF2 installation is usually done via plugins. Editing
 files, following bogus installation and hacking instructions, this is all long

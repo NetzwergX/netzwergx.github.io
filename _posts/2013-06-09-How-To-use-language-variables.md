@@ -1,8 +1,9 @@
 ---
 title: "How To: Use language variables"
 layout: article
-categories: [WCF]
+categories: [en, WCF]
 tags: [wcf2, wcf, how to, tutorial, language, plugin]
+lang: en
 ---
 WCF 2.0 comes with built-in internationalization (i18n) or, as some call
 it, multi-language support. I18n within WCF 2.0 is realied using so called

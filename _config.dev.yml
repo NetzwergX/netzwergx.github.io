@@ -1,8 +1,0 @@
-permalink: /:year-:month-:day-:title.html
-paginate: 10
-url: http://localhost:4000
-exclude: [README.md]
-timezone: Europe/Berlin
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "underline", "highlight"]

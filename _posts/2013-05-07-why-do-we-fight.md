@@ -1,8 +1,9 @@
 ---
 title: "Why do we fight – and what for?"
 layout: article
-categories: [WCF, General, Personal]
+categories: [en, WCF, General, Personal]
 tags: [WCF, WBB, discussion, culture, dekt]
+lang: en
 ---
 This is the question I've been asking myself more often lately. Seeing board discussions going sideways, parties in discussions getting mixed up in fights rather then discussions and people constantly blaming other people for things that could be considered insignificant.
 I too was that kind of guy. When someone would blame someone else for something that wasn't his fault, I'd step in, I'd set things right. Except, I know realize I wasn't. I just gave more fuel to the discussion.

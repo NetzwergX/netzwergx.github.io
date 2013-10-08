@@ -1,8 +1,9 @@
 ---
 title: "New responsive blog layout"
 layout: article
-categories: [General, Jekyll]
+categories: [en, General, Jekyll]
 tags: [jekyll, liquid, twitter, bootstrap, html5shiv, responsive, css, blog]
+lang: en
 ---
 I wanted to make the blog layout responsive for a long time now, but since I don't even own a smartphone,
 this wasn't really one of the top priorities for me. But then, the Jekyll 1.0 update came along, and I had

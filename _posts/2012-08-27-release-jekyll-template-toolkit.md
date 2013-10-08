@@ -2,7 +2,8 @@
 layout: article
 title: Release of Jekyll Template Toolkit (JTT)
 tags: [jekyll, git, github, github-pages, jtt]
-categories: [Jekyll]
+categories: [en, Jekyll]
+lang: en
 ---
 Today I've released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, 
 which is 100% compatible to github-pages. The source code can be found in the 

@@ -1,8 +1,9 @@
 ---
 title: Server outage and website move
 layout: article
-categories: General
+categories: [en, General]
 tags: [blog, server, WCF]
+lang: en
 ---
 The ongoing outage of my vServer has reminded me of the fact, that I had wanted to move some of my domains a long time ago, but never got to that.
 

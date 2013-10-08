@@ -1,14 +1,15 @@
 ---
-layout: article
+layout: page
 title: Impressum
 robots: noindex
+lang: de
 ---
 Dieses Impressum gilt für die Domain _'teumert.net'_.
 
 ### Anschrift
-Sebastian Teumert  
-Ulmenweg 10  
-59514 Welver  
+Sebastian Teumert 	
+Ulmenweg 10 	
+59514 Welver 	
 
 ### Sonstige Angaben
 <dl>

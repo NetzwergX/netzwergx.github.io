@@ -1,8 +1,9 @@
 ---
 title: "1st quarter of 2013 roundup - Spread the word!"
 layout: article
-categories: [General, Jekyll, WCF]
+categories: [en, General, Jekyll, WCF]
 tags: [jekyll, github, twitter, social, github-pages, blog, WCF]
+lang: en
 ---
 The new year saw some interesting developments, as I have been mentioned with my software several times throughout the web.
 

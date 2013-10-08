@@ -1,8 +1,9 @@
 ---
 title: Update for JTT
 layout: article
-categories: Jekyll
+categories: [en, Jekyll]
 tags: [jekyll, github-pages, blog]
+lang: en
 ---
 The update for the Jekyll Template Toolkit (JTT) included several bugfixes.  
 While working on my blog, I have encountered several flaws in JTT and went to fix them. There were some minor issues,
