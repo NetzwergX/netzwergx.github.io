@@ -1,11 +1,9 @@
 ---
-title: "Sebastian Teumert"
-description: "Freier Software-Entwickler & IT Freelancer<br/><small>Business Applications & Webentwicklung</small>"
+title: "Neues Portfolio in Entwicklung"
 lang: de
 alt: [en]
 layout: page
 ---
-## Neues Portfolio in Entwicklung
 <p>Hier entsteht in Kürze mein neues Portfolio, in dem ich meine bisherigen Arbeiten präsentieren werde, sowie Neuigkeiten
 rund um die von mir entwickelte und vertriebene Software.</p>
 <h4>Was ändert sich?</h4>

@@ -1,6 +1,5 @@
 ---
 layout: bone
-breadcrumbs: [{href: blog, rel: 'index up', title: 'breadcrumb.blog'}]
 ---
 {% if page.lang %}
 	{% assign lang = page.lang %}		
@@ -8,18 +7,7 @@ breadcrumbs: [{href: blog, rel: 'index up', title: 'breadcrumb.blog'}]
 	{% assign lang = site.lang.default %}		
 {% endif %}	
 <article id="content">
-	<header>
-		<nav>
-			<ol class="breadcrumbs">
-				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-					<a href="index{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html" rel="index up up" itemprop="url"><span itemprop="title">Sebastian Teumert</span></a>
-				</li>
-				<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">
-					<a href="blog{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html" rel="index up" itemprop="url"><span itemprop="title">{{ site.lang[lang].nav.blog }}</span></a>
-				</li>
-			</ol>		
-		</nav>
-		
+	<header>		
 		<h1>{{ page.title }}</h1>	
 		<p>
 			<time datetime="{{page.date | date: "%Y-%m-%d"}}" title="{{page.date | date: "%Y-%m-%d"}}">{{page.date | date: "%d.%m.%Y"}}</time>

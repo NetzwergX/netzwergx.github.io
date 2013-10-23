@@ -1,5 +1,5 @@
 ---
-layout: bcpage
+layout: page
 lang: de
 alt: [en]
 title: Software

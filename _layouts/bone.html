@@ -41,11 +41,8 @@
 	<!-- feed -->
 	<link rel="feed alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed">
 
-	<!-- Stylesheets -->
-	<link rel="stylesheet" href="assets/css/normalize.css" />
-	<link rel="stylesheet" href="assets/fonts/ptserif_regular/ptserif_regular.css" />
+	<!-- Stylesheets -->	
 	<link rel="stylesheet" href="assets/css/teumert.net.css" />
-	<link rel="stylesheet" href="assets/css/pygments.css" />
 
 	<!-- HTML5 shiv, for IE6-8 support of HTML5 elements -->
 	<!--[if lt IE 9]>
@@ -57,6 +54,12 @@
 	<!--[if IEMobile]><meta http-equiv="cleartype" content="on" /><![endif]-->	
 </head>
 <body>	
+
+<header id="header">
+	<h1><a href="/index.{% if lang != site.lang.default %}{{ lang }}.{% endif %}html">{{ site.lang[lang].title }}</a></h1>
+	{% if site.lang[lang].description %}<p>{{ site.lang[lang].description }}</p>{% endif %}
+	{% include nav.html %}
+</header>
 		
 {{ content }}
 			

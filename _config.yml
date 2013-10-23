@@ -15,12 +15,13 @@ lang:
   default: de
   de:
     lang: "Deutsch"
+    title: "Sebastian Teumert"
     nav:			
       start: "Start"
       about: "Über mich"
       software: "Software"
-      blog: "Blog"
-    breadcrumb.blog: "Blog"
+      blog: "Artikel"
+    breadcrumb.blog: "Artikel"
     blog:
       year: "Nachrichten & Artikel"
     article:
@@ -28,12 +29,13 @@ lang:
       time: 'am'
   en:
     lang: "English"
+    title: "Sebastian Teumert"
     nav: 			
       start: "Home"
       about: "About me"
       software: "Software"
-      blog: "Blog"
-    breadcrumb.blog: "Blog"
+      blog: "Articles"
+    breadcrumb.blog: "Articles"
     blog:
       year: "News & Articles"
     article:

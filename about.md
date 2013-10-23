@@ -1,5 +1,5 @@
 ---
-layout: bcpage
+layout: page
 title: "Über mich"
 excerpt: "Über Sebastian Teumert, meine Software und Interessen sowie Informationen über meinen Blog"
 lang: de
