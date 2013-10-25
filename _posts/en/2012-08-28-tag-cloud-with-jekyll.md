@@ -2,7 +2,7 @@
 layout: article
 title: Tag cloud in jekyll (without plugins)
 tags: [jekyll, github, github-pages, jtt]
-categories: [en, Jekyll]
+categories: [en]
 lang: en
 ---
 Creating a tag cloud with jekyll is not a simple task and most solutions found online use plugins for that. 

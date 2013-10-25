@@ -1,7 +1,7 @@
 ---
 title: Installing (and/or migrating) TS3 on Debian 6
-layout: article
-categories: [en, Linux]
+layout: default
+categories: [en]
 tags: [server, linux, debian, teamspeak]
 lang: en
 ---

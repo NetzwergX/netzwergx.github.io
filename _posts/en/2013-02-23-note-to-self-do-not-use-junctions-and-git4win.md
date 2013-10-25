@@ -1,7 +1,7 @@
 ---
 title: "Note to myself: Do not use junctions with GitHub for Windows"
-layout: article
-categories: [en, "Notes to self", Windows]
+layout: default
+categories: [en]
 tags: [windows, github, bug]
 lang: en
 ---

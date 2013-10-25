@@ -2,7 +2,7 @@
 layout: article
 title: Blogging with jekyll
 tags: [ruby, jekyll, git, github, blogging, blog]
-categories: [en, Jekyll, General]
+categories: [en]
 lang: en
 ---
 Yet another blog? Yup, and some interesting stuff to read. Development announcements, interesting code 

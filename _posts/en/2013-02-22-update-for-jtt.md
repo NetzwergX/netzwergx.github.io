@@ -1,7 +1,7 @@
 ---
 title: Update for JTT
-layout: article
-categories: [en, Jekyll]
+layout: default
+categories: [en]
 tags: [jekyll, github-pages, blog]
 lang: en
 ---

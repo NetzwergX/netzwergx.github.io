@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 lang: en
 alt: [de]
 title: Software

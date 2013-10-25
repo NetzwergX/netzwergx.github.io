@@ -1,7 +1,7 @@
 ---
 title: Server outage and website move
 layout: article
-categories: [en, General]
+categories: [en]
 tags: [blog, server, WCF]
 lang: en
 ---

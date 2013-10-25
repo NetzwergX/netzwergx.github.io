@@ -1,7 +1,7 @@
 ---
 title: "JTT in action"
-layout: article
-categories: [en, Jekyll]
+layout: default
+categories: [en]
 tags: [jekyll, liquid, jtt, template, toolkit, github-pages, gh-pages, github, sites, demos]
 lang: en
 ---

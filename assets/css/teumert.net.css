@@ -451,6 +451,7 @@ body, html {
 body {
 	max-width: 1000px;
 	margin: 3em auto;
+	padding: 0 2em;
 }
 
 code {
@@ -512,9 +513,9 @@ a:hover {
 
 article, section#content {
 	text-align: justify;	
-	margin-bottom: 2em;
 	padding: 2em 4em;
 	background-color: #fff;
+	margin-bottom: 2em;
 	-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
@@ -531,6 +532,16 @@ article img {
 	border: 1px solid #bbb;
 	max-width: 100%;
 }
+
+.icon {
+	box-shadow: none;
+	padding: 0;
+	background: transparent;
+	border: none;
+	margin-right: 1em;
+	vertical-align: middle;
+}
+
 article footer {
 	border-top: 1px solid #d3d3d3;
 }
@@ -538,7 +549,8 @@ article footer {
 /* ----- Misc ----- */
 
 h1 time, h2 time, h3 time {
-	float: right;
+	float: right;	
+	text-align: right;
 	margin-left: 1em;
 }
 
@@ -559,6 +571,10 @@ dd {
 
 footer, time {
 	color: #708090;
+}
+
+time {
+	font-weight: normal;	
 }
 
 /* Util */
@@ -637,6 +653,7 @@ ul#blog a time {
 		-webkit-box-shadow: none;
 		-moz-box-shadow:none;
 		box-shadow: none;
+		border-top: 1px solid #d3d3d3;
 	}
 }
 

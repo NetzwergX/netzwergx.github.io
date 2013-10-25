@@ -1,5 +1,5 @@
 ---
-layout: bcpage
+layout: default
 title: About me
 excerpt: About Sebastian Teumert, my software, interests, contact info and information about my blog.
 lang: en

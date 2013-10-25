@@ -1,7 +1,7 @@
 ---
 title: "Awesome etckeeper"
-layout: article
-categories: [en, "Linux"]
+layout: default
+categories: [en]
 tags: [git, linux, etc, debian, ubuntu]
 lang: en
 ---

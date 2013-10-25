@@ -20,10 +20,9 @@ lang:
       start: "Start"
       about: "Über mich"
       software: "Software"
-      blog: "Artikel"
-    breadcrumb.blog: "Artikel"
+      blog: "Artikel"   
     blog:
-      year: "Nachrichten & Artikel"
+      year: "Artikel"
     article:
       by: 'verfasst von'
       time: 'am'
@@ -34,10 +33,9 @@ lang:
       start: "Home"
       about: "About me"
       software: "Software"
-      blog: "Articles"
-    breadcrumb.blog: "Articles"
+      blog: "Articles"  
     blog:
-      year: "News & Articles"
+      year: "Articles"
     article:
       by: 'written by'
       time: 'on'

@@ -1,7 +1,7 @@
 ---
 title: Installing LAMP on Debian 6
-layout: article
-categories: [en, Linux]
+layout: default
+categories: [en]
 tags: [server, linux, debian]
 lang: en
 ---

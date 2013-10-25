@@ -1,7 +1,7 @@
 ---
 title: "wmake - WCF 2.0 package build script"
-layout: article
-categories: [en, WCF]
+layout: default
+categories: [en]
 tags: [WCF, package, WBB, shell, build, wmake]
 lang: en
 ---

@@ -9,7 +9,7 @@ rund um die von mir entwickelte und vertriebene Software.</p>
 <h4>Was ändert sich?</h4>
 <p>Da ich künftig den Hauptschwerpunkt meiner beruflichen Arbeit auf den deutschsprachigen Raum setzen werde, wird die
 Hauptseite künftig auch in Deutsch angeboten werden. Meine bestehenden englischen Blogeinträge werden in Kürze unter
-der Domain <a href="http://teumert.net/en/" title="Englische Version der Seite">teumert.net/en/</a> zu finden sein.
+der Domain <a href="http://en.teumert.net/" title="Englische Version der Seite">en.teumert.net</a> zu finden sein.
 Naürlich werde ich auch weiterhin englische Artikel veröffentlichen, allerdings werden künftig Inhalte immer
 nur noch in beiden Sprachen erscheinen. Auch wird meine Arbeit an Open-Source Projekten im englischsprachigem Raum
 weitergehen. Auch wird meine Software z.B. im WoltLab Plugin Store selbstverständlich auch mehrsprachig angeboten werden.
@@ -26,7 +26,3 @@ Klassen semantisch zu vergeben - dies ist auch eines der Probleme von Twitter Bo
 CSS Klassen, und keine "sinnvolle" Verwendung derselben. Ich glaube, ich kann an dieser Stelle ein deutlich besseres Ergebnis
 erzielen in Punkte Größe, Wartbarkeit, Anpassbarkeit (Individualisierbarkeit) und Stil, wenn ich mich hier nur einigen wenigem,
 selbst geschriebem CSS widme.</p>
-
-[English](http://teumert.net/en)
---------------------------------
-An english version of my website is available under [teumert.net/en/](http://teumert.net/en).

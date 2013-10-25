@@ -2,7 +2,7 @@
 layout: article
 title: Release of Jekyll Template Toolkit (JTT)
 tags: [jekyll, git, github, github-pages, jtt]
-categories: [en, Jekyll]
+categories: [en]
 lang: en
 ---
 Today I've released my Jekyll Template toolkit, a collection of templates and layouts for jekyll, 

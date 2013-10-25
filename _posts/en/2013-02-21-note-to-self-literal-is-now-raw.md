@@ -1,7 +1,7 @@
 ---
 title: "Note to myself: `literal` is now `raw`"
-layout: article
-categories: [en, "Notes to self"]
+layout: default
+categories: [en]
 tags: [jekyll, blog, github-pages]
 lang: en
 ---

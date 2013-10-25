@@ -1,5 +1,5 @@
 ---
-layout: bcpage
+layout: default
 title: Impressum
 robots: noindex
 lang: de

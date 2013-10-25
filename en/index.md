@@ -3,7 +3,7 @@ title: "Sebastian Teumert"
 description: "Independent Software-Developer & IT Freelancer<br/><small>Business Applications & Webdevelopment</small>"
 lang: en
 alt: [de]
-layout: page
+layout: default
 ---
 ## Welcome!
 

@@ -1,7 +1,7 @@
 ---
 title: "How To: Use language variables"
-layout: article
-categories: [en, WCF]
+layout: default
+categories: [en]
 tags: [wcf2, wcf, how to, tutorial, language, plugin]
 lang: en
 ---

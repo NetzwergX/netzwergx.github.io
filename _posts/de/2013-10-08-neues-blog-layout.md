@@ -1,11 +1,11 @@
 ---
 title: "Neues Layout"
-layout: post
-categories: [de]
+layout: default
 tags: [jekyll, liquid, twitter, bootstrap, html5shiv, responsive, css, blog]
 lang: de
+categories: [de]
 ---
-For etwa 4 1/2 Monaten habe ich gerade erst das [Layout geändert], und nun schon wieder eine Änderung?
+For etwa 4 1/2 Monaten habe ich gerade erst das Layout geändert, und nun schon wieder eine Änderung?
 Wie kommt es dazu?
 
 

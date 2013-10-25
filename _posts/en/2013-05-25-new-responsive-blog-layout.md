@@ -1,7 +1,7 @@
 ---
 title: "New responsive blog layout"
-layout: article
-categories: [en, General, Jekyll]
+layout: default
+categories: [en]
 tags: [jekyll, liquid, twitter, bootstrap, html5shiv, responsive, css, blog]
 lang: en
 ---

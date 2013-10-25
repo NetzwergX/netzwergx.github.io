@@ -1,7 +1,7 @@
 ---
 title: "How to: Create WCF 2 Plugins"
-layout: article
-categories: [en, WCF]
+layout: default
+categories: [en]
 tags: [wcf2, wcf, how to, tutorial, package, plugin]
 lang: en
 ---

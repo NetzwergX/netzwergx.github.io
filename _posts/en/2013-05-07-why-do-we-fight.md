@@ -1,7 +1,7 @@
 ---
 title: "Why do we fight – and what for?"
-layout: article
-categories: [en, WCF, General, Personal]
+layout: default
+categories: [en]
 tags: [WCF, WBB, discussion, culture, dekt]
 lang: en
 ---
