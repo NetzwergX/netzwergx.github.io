@@ -58,7 +58,18 @@
 <header id="header">
 	<h1><a href="/index.{% if lang != site.lang.default %}{{ lang }}.{% endif %}html">{{ site.lang[lang].title }}</a></h1>
 	{% if site.lang[lang].description %}<p>{{ site.lang[lang].description }}</p>{% endif %}
-	{% include nav.html %}
+	<nav>
+		<ul class="nav">
+			<li id="dropdown">&#x25bc; Navigation</li>
+			<li><a href="index{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.start }}</a></li>
+			<li><a href="about{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.about }}</a></li>
+			<li><a href="software{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.software }}</a></li>
+			<li><a href="blog{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.blog }}</a></li>		
+			{% for alt in page.alt %}
+				<li><a href="{{ page.url | split : '.' | first }}{% if alt != site.lang.default %}.{{alt}}{% endif %}.html">{{ site.lang[alt].lang }}</a></li>
+			{% endfor %}		
+		</ul>
+	</nav>
 </header>
 		
 {{ content }}

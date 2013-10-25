@@ -3,15 +3,5 @@
 {% else %}
 	{% assign lang = site.lang.default %}		
 {% endif %}	
-<nav>
-	<ul class="nav">
-		<li><a href="index{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.start }}</a></li>
-		<li><a href="about{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.about }}</a></li>
-		<li><a href="software{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.software }}</a></li>
-		<li><a href="blog{% if lang != site.lang.default %}.{{ lang }}{% endif %}.html">{{ site.lang[page.lang].nav.blog }}</a></li>		
-		{% for alt in page.alt %}
-			<li><a href="{{ page.url | split : '.' | first }}{% if alt != site.lang.default %}.{{alt}}{% endif %}.html">{{ site.lang[alt].lang }}</a></li>
-		{% endfor %}		
-	</ul>
-</nav>
+
 

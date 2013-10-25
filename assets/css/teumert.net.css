@@ -472,18 +472,6 @@ a:hover {
 	text-align: center;
 }
 
-#header {
-	padding-bottom: 0.8em;
-	margin-bottom: 1.6em;
-	border-bottom: 1px solid #d3d3d3;	
-} 
-
-#header h1 {
-	padding-bottom: 0.4em;
-	margin-bottom: .8em;
-	border-bottom: 1px solid #d3d3d3;
-}
-
 #header h1 a, #header h1 a:visited, #header h1 a:link {
 	color: black;
 	text-decoration: none;
@@ -493,33 +481,32 @@ a:hover {
 	color: #00baff;
 }
 
-/* ----- Navigation----- */
-
-ul.nav {	
-	text-align: center;
-	font-size: 1.2em;
+/* ----- Navigation -----  */
+ 
+ header nav {
+ 	border-bottom: 1px solid #d3d3de;
+ 	border-top: 1px solid #d3d3de;
+ 	margin: 1.6em 0;
+ 	padding: 0.8em 0;
+ }
+.nav {        
+        text-align: center;
+        font-size: 1.2em;
 }
 
-ul.nav li {
-	display: inline-block;
-	margin: 0 1em;
+.nav li {
+        display: inline-block;
+        margin: 0 1em;
 }
 
-ul.nav a {
-	text-decoration: none;
+.nav a {
+        text-decoration: none;
 }
 
-ol.breadcrumbs {
-	padding-left: 0;
+#dropdown {
+	display: none;
 }
 
-ol.breadcrumbs li {
-	display: inline-block;
-}
-
-ol.breadcrumbs li:after {
-	content: '\00BB';
-}
 
 /* ----- Article / Content----- */
 
@@ -615,15 +602,19 @@ ul#blog a time {
 	article { 
 		padding: 2em;
 	}
-	
-	ul.nav {
-		width: 100%;
-		margin: 0;
+		
+	.nav li {
+		display: none;		
 	}
 	
-	ul.nav li {
-		margin: .5em auto;
-		width: 49%;
+	ul.nav:hover li {
+		display: block;
+		line-height: 120%;
+		margin: .2em;
+	}
+		
+	#dropdown {
+		display: block;
 	}
 }
 
