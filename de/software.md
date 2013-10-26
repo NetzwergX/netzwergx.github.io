@@ -31,8 +31,9 @@ konzentriere.
 </dl>
 
 ### Link Awesome
+Awesome visual cues (icons) for your hyperlinks.
 <dl>
-	<dt>Web</dt><dd><a href="https://github.com/NetzwergX/Link-Awesome/blob/master/README.md">LinkAwesome ReadMe</a></dd>
+	<dt>Web</dt><dd><a href="http://teumert.net/Link-Awesome/">LinkAwesome</a></dd>
 	<dt>Source</dt><dd><a href="https://github.com/NetzwergX/Link-Awesome/blob/master">GitHub Repo</a></dd>
 </dl>
 
