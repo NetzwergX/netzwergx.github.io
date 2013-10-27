@@ -1,5 +1,7 @@
 ---
 title: "Neues Portfolio in Entwicklung"
+description: "Software-Entwickler, Webdesigner und Blogger"
+tags: ["mobile first", "responsive", "CSS3", "HTML5", "PHP", "Java", "JavaScript", "UML", "OCL", "applications", "apps", "business applications", "enterprise"]
 lang: de
 alt: [en]
 layout: default
