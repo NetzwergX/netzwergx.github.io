@@ -1,43 +1,39 @@
-permalink: /:categories/:year-:month-:day-:title.html
-url: /
-exclude: [README.md]
-timezone: Europe/Berlin
-markdown: redcarpet
-redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "underline", "highlight"]
-  
-title: "Sebastian Teumert"
-  
-author: 
-  name: "Sebastian Teumert"
-  href: "/index.html"
-  email: "sebastian.teumert@gmx.de"
+title: A coding column.
+email: sebastian.teumert@gmx.de
+description: >- 
+  My personal take on coding, software design and programming languages.
+baseurl: "" 
+url: "" 
+twitter_username: NetzwergX
+github_username:  NetzwergX
 
-lang:
-  default: de
-  de:
-    lang: "Deutsch"
-    title: "Sebastian Teumert"
-    nav:			
-      start: "Start"
-      about: "Über mich"
-      software: "Software"
-      blog: "Artikel"   
-    blog:
-      year: "Artikel"
-    article:
-      by: 'verfasst von'
-      time: 'am'
-  en:
-    lang: "English"
-    title: "Sebastian Teumert"
-    nav: 			
-      start: "Home"
-      about: "About me"
-      software: "Software"
-      blog: "Articles"  
-    blog:
-      year: "Articles"
-    article:
-      by: 'written by'
-      time: 'on'
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      author: Sebastian Teumert
+      show_license: true
+      permalink: /blog/:title-:year
+
+show_excerpts: true
+
+header_pages:
+  - archive.html
+  - categories.html
+  - about.md
+minima:
+  date_format: "%b %-d, %Y"
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
