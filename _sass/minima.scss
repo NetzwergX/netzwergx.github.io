@@ -120,6 +120,26 @@ h4 {
 	margin-top: 4px;
 }
 
+.badge {
+	display: inline-block;
+	min-width: 10px;
+	padding: 3px 7px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 1;
+	vertical-align: baseline;
+	white-space: nowrap;
+	text-align: center;
+	background-color: #999;
+	border-radius: 10px;
+}
+
+.badge-alt   {background-color: #337ab7;}
+.badge-info  {background-color: #5bc0de; color:#333;}
+.badge-ok    {background-color: #5cb85c; color:#333;}
+.badge-warn  {background-color: #f0ad4e; color:#333;}
+.badge-error {background-color: #d9534f; color:#eee;}
 
 @media print {
 	details:after{content:"(" attr(data-url) ")";}
