@@ -1,9 +1,7 @@
 ---
-title: "Note to myself: Do not use junctions with GitHub for Windows"
-layout: default
-categories: [en]
+title: "Note to self: Do not use junctions with GitHub for Windows"
+categories: [windows]
 tags: [windows, github, bug]
-lang: en
 ---
 The GitHub for Windows client does not work properly with junctions (`mklink /j ..`).  
 I encountered this issue when I set up my working environment for WCF 2.0 on Windows (yes, I am back

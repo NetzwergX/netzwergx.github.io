@@ -1,9 +1,7 @@
 ---
 title: "How To: Use language variables"
-layout: default
-categories: [en]
+categories: [Woltlab]
 tags: [wcf2, wcf, how to, tutorial, language, plugin]
-lang: en
 ---
 WCF 2.0 comes with built-in internationalization (i18n) or, as some call
 it, multi-language support. I18n within WCF 2.0 is realied using so called
@@ -96,7 +94,7 @@ into the WCF database youself.
 
 In this case, `wcf.page` is the correct category.
 
-<instruction type="language">language/*.xml</instruction>
+	<instruction type="language">language/*.xml</instruction>
 
 
 

@@ -1,9 +1,7 @@
 ---
 title: "Awesome etckeeper"
-layout: default
-categories: [en]
+categories: [linux]
 tags: [git, linux, etc, debian, ubuntu]
-lang: en
 ---
 The idea behind `etckeeper` is as simple as smart: Use a VCS to keep track of changes to config files in /etc/, providing you with a history, rollback options and much more.
 

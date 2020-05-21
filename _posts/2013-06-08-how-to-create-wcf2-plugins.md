@@ -1,9 +1,7 @@
 ---
 title: "How to: Create WCF 2 Plugins"
-layout: default
-categories: [en]
+categories: [woltlab]
 tags: [wcf2, wcf, how to, tutorial, package, plugin]
-lang: en
 ---
 Customizing your WBB4 / WCF2 installation is usually done via plugins. Editing
 files, following bogus installation and hacking instructions, this is all long
@@ -30,7 +28,7 @@ Typically, a package.xml would look like this:
 		<packagename>WCF2 Example Plugin</packagename>
 		<packagedescription>This plugin is used for demonstrational purposes.</packagedescription>
 		<version>1.0.0 Alpha 1</version>
-		<date>2013-08-09</date>			
+		<date>2013-08-09</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -137,7 +135,7 @@ data from the database that we will display.
 		<packagename>Hello, World!</packagename>
 		<packagedescription>A variant of he Hello, World! sample for WCF 2.0</packagedescription>
 		<version>1.0.0 Alpha 1</version>
-		<date>2013-06-08</date>			
+		<date>2013-06-08</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -146,12 +144,12 @@ data from the database that we will display.
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>			
+		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<instructions type="install">
 		<instruction type="file">files.tar</instruction>
-		<instruction type="template">templates.tar</instruction>					
+		<instruction type="template">templates.tar</instruction>
 	</instructions>
 </package>
 ~~~~

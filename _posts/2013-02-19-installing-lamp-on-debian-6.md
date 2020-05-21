@@ -1,9 +1,7 @@
 ---
 title: Installing LAMP on Debian 6
-layout: default
-categories: [en]
+categories: [linux]
 tags: [server, linux, debian]
-lang: en
 ---
 Installing LAMP on debian 6 is refreshingly easy. This guide covers a typical LAMP (Linux, Apache, MySQL, PHP) installation on Debian 6. I had to set it up yesterday, so I thought I'd share some of the steps on the way. Since I have also needed a TeamSpeak3 server, there will be a follow-up on that, too. I will use example.org as a server domain, but replace it as appropriate for your needs when following the guide.
 

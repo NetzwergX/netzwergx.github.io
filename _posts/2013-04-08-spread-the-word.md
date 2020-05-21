@@ -1,7 +1,7 @@
 ---
 title: "1st quarter of 2013 roundup - Spread the word!"
 layout: default
-categories: [en]
+categories: [jekyll]
 tags: [jekyll, github, twitter, social, github-pages, blog, WCF]
 lang: en
 ---

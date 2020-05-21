@@ -1,9 +1,7 @@
 ---
 title: "wmake - WCF 2.0 package build script"
-layout: default
-categories: [en]
+categories: [Woltlab]
 tags: [WCF, package, WBB, shell, build, wmake]
-lang: en
 ---
 The release of WBB4 and WCF 2.0 beta gets closer every day, and writing plugins for it becomes more and more interesting, especially since we knowget a good overview about the things that might not be included by default and make a good plugin. To make things easier, i wrote a little shell script that automagically packs WCF 2.0 packages: **wmake**!
 
