@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+  {% assign pdf_path = page.title | slugify | append: ".pdf" | prepend: "/blog/" %}
+  {% assign pdf_file = site.static_files | where: "path", pdf_path | first %}
+  {%- if pdf_file != null -%}
+	<a class="no-print pdf-link" href="{{pdf_path | relative_url}}" target="_blank"><img src="/assets/images/icon-pdf.svg" width="42px" height="42px" alt="PDF"/></a>
+{%- endif -%}
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+	
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span> </span>
+      {%- endif -%}
+	  {%- if page.categories -%}
+        {% capture category_links %}{%- for category in page.categories -%}{%- assign cat_page = site.category | where: "title", category | first -%} • <a href="{{ cat_page.url | relative_url }}">{{category | escape}}</a>,{%- endfor -%}{% endcapture %}
+		{{ category_links | split: "," | join "," }}
+      {%- endif -%}
+	</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+  
+  {%- if page.series -%}
+    <footer class="no-print">
+	
+	<h2 class="post-list-heading">Related Reading:</h2>
+	<ul class="post-list">
+      {%- for post in site.posts -%}
+	  {%- if post.series == page.series and post.title != page.title -%}
+      <li>
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+      </li>
+	   {%- endif -%}
+      {%- endfor -%}
+    </ul>
+  </footer>
+ {%- endif -%}
+
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
