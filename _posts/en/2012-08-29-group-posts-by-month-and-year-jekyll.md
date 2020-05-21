@@ -22,7 +22,7 @@ Conception
 Since I am in the habit of giving things a thorough thought before starting, I took pen & paper and made a 
 general concept of how this should work.
 
-###HTML markup
+### HTML markup
 First of all I have laid out the result I wanted to achieve in HTML. Since this is a grouped list, using 
 nested lists was the semantic correct approach. This is pretty straight forward:
 
