@@ -2,7 +2,7 @@
 layout: post
 title: Failure Modes
 date: 2020-05-07
-categories: [Java, PHP]
+categories: [Java]
 tags: [exception-handling]
 ---
 Programs often have to deal with less then ideal conditions -- intermittent internet connections, hardware dropping in 

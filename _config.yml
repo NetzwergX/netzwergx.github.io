@@ -1,11 +1,17 @@
 title: A coding column.
-email: sebastian.teumert@gmx.de
 description: >- 
   My personal take on coding, software design and programming languages.
 baseurl: "" 
 url: "" 
-twitter_username: NetzwergX
+#twitter_username: NetzwergX
 github_username:  NetzwergX
+
+collections:
+  category:
+    output: true
+  portfolio:
+    output: true
+
 
 defaults:
   -
@@ -16,12 +22,25 @@ defaults:
       author: Sebastian Teumert
       show_license: true
       permalink: /blog/:title-:year
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: "category"
+      permalink: /blog/:title/
+  -
+    scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: "default"
+      permalink: /portfolio/:title/
 
 show_excerpts: true
 
 header_pages:
-  - archive.html
-  - categories.html
+#  - portfolio.html
   - about.md
 minima:
   date_format: "%b %-d, %Y"
@@ -32,6 +51,7 @@ theme: minima
 
 plugins:
   - jekyll-feed
+  - jekyll-gist
 
 exclude:
   - Gemfile

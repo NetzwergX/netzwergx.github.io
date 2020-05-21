@@ -22,12 +22,12 @@ GERMANY --- Deutschland
 	of the german *“Impressumpsflicht”* (§ 5 TMG, § 55 Abs. 2 RStV).
 </small>
 
-# Datenschutzerklärung (DSGVO)
+## Datenschutzerklärung (DSGVO)
 Auf dieser Webseite werden keine personenbezogenen Daten erhoben, gespeichert oder verarbeitet. 
 Es werden keine Cookies verwendet.
 
-## Verweis auf Dritte
-### Daten-Erhebung durch die Nutzung von GitHub Pages & GitHub Gists
+### Verweis auf Dritte
+#### Daten-Erhebung durch die Nutzung von GitHub Pages & GitHub Gists
 Diese Website wird auf Servern von [Github Inc., 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA](https://www.github.com/) gehostet. 
 Beachten Sie daher auch die [GitHub Privacy Policy](https://help.github.com/articles/github-privacy-policy/) und [GitHub Global Privacy Practices](https://help.github.com/articles/global-privacy-practices/).
 
@@ -36,12 +36,12 @@ Der Privacy-Shield ist ein Übereinkommen zwischen der Europäischen Union (EU) 
 europäischer Datenschutzstandards in den USA gewährleisten soll. 
 Siehe dazu die [Privacy Shield Compliance Erklärung von Github](https://www.privacyshield.gov/participant?id=a2zt000000001K2AAI&status=Active).
 
-# Data Protection Policy (GDPR)
+## Data Protection Policy (GDPR)
 This website does not collect, store or process Personally Identifiable Information (PII). 
 This website does not require the use of cookies.
 
-## Third Party Inclusion
-### Data collection through the use of GitHub Pages & GitHub Gists
+### Third Party Inclusion
+#### Data collection through the use of GitHub Pages & GitHub Gists
 This website is hosted on servers of [Github Inc, 88 Colin P Kelly Jr St, San Francisco, CA 94107, USA](https://github.com). 
 Therefore, please review the [GitHub Privacy Policy](https://help.github.com/articles/github-privacy-policy/) and [GitHub Global Privacy Practices](https://help.github.com/articles/global-privacy-practices/).
 

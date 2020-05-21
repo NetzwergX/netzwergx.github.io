@@ -247,6 +247,7 @@ DEPENDENCIES
   github-pages
   jekyll-compose
   jekyll-feed (~> 0.6)
+  jekyll-gist
   minima (~> 2.5.1)
 
 BUNDLED WITH

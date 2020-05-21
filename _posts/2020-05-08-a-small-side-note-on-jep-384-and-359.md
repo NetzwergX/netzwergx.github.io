@@ -4,6 +4,7 @@ title: A small side note on JEPs 384 and 359
 date: 2020-05-08 23:10 +0200
 categories: [Java]
 tags: [Records]
+series: Records-2020
 ---
 
 When reading about records and having read 

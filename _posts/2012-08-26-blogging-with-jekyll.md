@@ -1,7 +1,6 @@
 ---
 title: Blogging with jekyll
 tags: [ruby, jekyll, git, github, blogging, blog]
-categories: [blog]
 ---
 Yet another blog? Yup, and some interesting stuff to read. Development announcements, interesting code 
 snippets, oddities from programming languages and much more.

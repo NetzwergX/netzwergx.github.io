@@ -78,7 +78,7 @@ $on-laptop:        800px !default;
 	text-align: justify;
 }
 
-pre, code {
+pre, code, .gist-file {
 	tab-size: 4;
 }
 
@@ -90,10 +90,47 @@ hr {
 	border-top: 1px solid #e8e8e8;
 }
 
+article footer .post-list li {
+	margin-bottom: 5px;
+}
+
+article footer .post-list li h3 {
+	margin-bottom: 0px;
+}
+
+article footer .post-list .post-link {
+	font-size: 20px;
+}
+
+.license-info {
+	text-align: justify;
+}
+
+pre {
+	font-size: 14px !important;
+}
+
+h4 {
+	font-weight: 500;
+}
+
+.pdf-link {
+	float:right; 
+	margin-left: 15px; 
+	margin-top: 4px;
+}
+
 
 @media print {
 	details:after{content:"(" attr(data-url) ")";}
 	.footer-links, .site-header, .no-print { display: none;}
+	
+	
+	.highlight {
+		white-space: pre-wrap;
+		word-break: keep-all;
+		page-break-inside: avoid;
+	}
 	
 	hr {
 		visibility: hidden;

@@ -1,6 +1,6 @@
 ---
 title: "How to: Create WCF 2 Plugins"
-categories: [woltlab]
+categories: [Woltlab]
 tags: [wcf2, wcf, how to, tutorial, package, plugin]
 ---
 Customizing your WBB4 / WCF2 installation is usually done via plugins. Editing

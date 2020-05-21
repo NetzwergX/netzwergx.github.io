@@ -1,8 +1,10 @@
 ---
-layout: page
+layout: default
 title: About Me
 permalink: /about/
 ---
+
+# About Me
 
 Hello,  
 and thanks for being interested in my blog! I hope you will find some interesting stuff here.
@@ -21,12 +23,12 @@ I have recently begun this blog as a serious platform to get my thoughts out on 
 coding, software -development, -engineering & -design as well as language design and its implications of programs.
 
 
-# On the web
+## On the web
 
-* [Follow me on Twitter](https://twitter.com/NetzwergX)
+<!--* [Follow me on Twitter](https://twitter.com/NetzwergX)-->
 * [Fork me on GitHub](https://github.com/NetzwergX)
 
-# About the blog
+## About the blog
 
 This blog is authored in Markdown and the typesetting for math equations is done via locally-included MathJax.
 
@@ -37,3 +39,10 @@ The usage of MathJax and Bibtex.JS means I can easily convert posts to and from 
 the web but also powerful typesetting where needed for PDFs.
 
 The style of the site is the Jekyll Theme "Minima", with slight alterations (mostly to the footer and for printing).
+
+### Acknowledgements
+
+* The PDF Icon used on this blog is courtesy of [Simran Singh](https://www.iconfinder.com/SimranSingh) and can be found on
+[IconFinder](https://www.iconfinder.com/icons/2133056/document_eps_file_format_pdf_icon).
+* I got the idea for the category pages from [Kyle Banks](https://kylewbanks.com/) 
+blog post [*"Creating Category Pages in Jekyll without Plugins"*](https://kylewbanks.com/blog/creating-category-pages-in-jekyll-without-plugins)

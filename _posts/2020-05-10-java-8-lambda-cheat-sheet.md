@@ -2,6 +2,8 @@
 layout: post
 title: Java 8 Lambda Cheat Sheet
 date: 2020-05-06
+categories: [Java]
+tags: [lambda, functional-programming, cheat-sheet]
 ---
 
 Even though Java 8 is just a little over six years old and brought a tremendous revolution to Java, 

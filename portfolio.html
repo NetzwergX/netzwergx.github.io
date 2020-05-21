@@ -1,0 +1,19 @@
+---
+layout: default
+title: Portfolio
+---
+
+<div class="home">
+	<h1 class="page-heading">{{page.title}}</h1>
+	
+	<ul class="post-list">
+		{% for post in site.portfolio %}
+			<li>
+				<span class="post-meta">Some meta info</span>
+				<h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+				{{ post.excerpt }}
+			</li>
+		{%- endfor -%}
+	</ul>
+	<ul>
+</div>

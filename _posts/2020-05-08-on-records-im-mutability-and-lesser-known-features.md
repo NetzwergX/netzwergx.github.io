@@ -4,10 +4,11 @@ title: On records & (im-) mutability
 date: 2020-05-08 21:24 +0200
 categories: [Java]
 tags: [Records]
+series: Records-2020
 ---
 
-Unfortunately, "records are immutable" is a false truth that gets repeated all too often. 
-Looking at the JEP, we see them being called "shallowly-immutable". That is an important distinction.
+Records are sometimes described as immutable, which is unfortunate. Looking at the JEP, we see them being called 
+"shallowly-immutable". That is an important distinction.
 A record can still be changed in a multitude of ways, and this article sheds some light on the strategies one
 can employ to ensure records actually are immutable.
 
@@ -146,10 +147,6 @@ With such a constructor, some libraries, most notably Jackson, can be made to wo
 
 Records are only "shallowly-immutable". If one wants to leverage the beneficial properties of immutable types, 
 great care has to be taken to ensure that the record actually is immutable, and not only appears that way at first glance.
-
-# Related reading:
-
-* [Records & their constructors]()
 
 [Jackson]: https://github.com/FasterXML/jackson-future-ideas/issues/46
 [JEP 384]: https://openjdk.java.net/jeps/384

@@ -1,6 +1,6 @@
 ---
 title: Update for JTT
-categories: [jekyll]
+categories: [Jekyll]
 tags: [jekyll, github-pages, blog]
 ---
 The update for the Jekyll Template Toolkit (JTT) included several bugfixes.  

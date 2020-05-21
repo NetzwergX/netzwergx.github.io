@@ -1,7 +1,7 @@
 ---
 title: Group posts by month and year in jekyll
 tags: [jekyll, github, github-pages, jtt]
-categories: [jekyll]
+categories: [Jekyll]
 ---
 This article describes the technique used in this blog to display posts grouped by month and year in jekyll, most prominently seen in the widget within the sidebar. No plugin is required for this.
 

@@ -1,7 +1,7 @@
 ---
 title: "Note to self: `literal` is now `raw`"
 layout: default
-categories: [jekyll]
+categories: [Jekyll]
 tags: [jekyll, blog, github-pages]
 ---
 As of the last update to GitHub Pages, the `literal` tag is now `raw`.  

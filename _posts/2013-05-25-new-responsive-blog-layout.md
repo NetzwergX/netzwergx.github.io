@@ -1,6 +1,6 @@
 ---
 title: "New responsive blog layout"
-categories: [About this blog]
+categories: [Blog]
 tags: [jekyll, liquid, twitter, bootstrap, html5shiv, responsive, css, blog]
 ---
 I wanted to make the blog layout responsive for a long time now, but since I don't even own a smartphone,

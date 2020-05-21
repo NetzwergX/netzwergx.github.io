@@ -4,6 +4,7 @@ title: Records & their constructors
 date: 2020-05-08 22:57 +0200
 categories: [Java]
 tags: [Records]
+series: Records-2020
 ---
 
 A look at the constructors of records in Java 14, and how one can leverage
@@ -111,14 +112,11 @@ public record FooBar(String foo, List<String> bars) {
 	}
 
 	public static void main(String[] args) throws JsonProcessingException {
-		System.out.println(new ObjectMapper().readValue("{\"foo\" : \"foo\", \"bars\": []}", FooBar.class));
+		System.out.println(new ObjectMapper()
+			.readValue("{\"foo\" : \"foo\", \"bars\": []}", FooBar.class));
 		// prints out FooBar[foo=foo, bars=[]]
 	}
 }
 ~~~
-
-# Related Reading
-
-* [On records & (im-) mutability]()
 
 [amber-spec-experts]: https://mail.openjdk.java.net/pipermail/amber-spec-experts/2020-April/002111.html
