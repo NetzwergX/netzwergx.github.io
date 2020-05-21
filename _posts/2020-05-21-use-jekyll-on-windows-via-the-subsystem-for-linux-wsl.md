@@ -15,7 +15,7 @@ In order to install the subsystem, you'll need to open a PowerShell window and t
 1. **Install a distro**
 Visit the [Microsoft Store page for Linux Distros](https://aka.ms/wslstore) and choose a distro. For the sake of this blog post, I'll use Ubuntu.
 1. Run `sudo apt update && sudo apt upgrade`
-1. <span class="badge badge-error">Optional</span> Activate <kbd>Ctrl+<b>Shift</b>+V</kbd> & <kbd>Ctrl+<b>Shift</b>+C</kbd> via `RMB (Mouse) > Properties > Options (Tab) > Use Ctrl+Shift+C/V as Copy/Paste`
+1. <span class="badge">Optional</span> Activate <kbd>Ctrl+<b>Shift</b>+V</kbd> & <kbd>Ctrl+<b>Shift</b>+C</kbd> via `RMB (Mouse) > Properties > Options (Tab) > Use Ctrl+Shift+C/V as Copy/Paste`
 4. Run `$ lsb_release -a`, which should print:
 ```bash
 No LSB modules are available.
