@@ -141,6 +141,15 @@ h4 {
 .badge-warn  {background-color: #f0ad4e; color:#333;}
 .badge-error {background-color: #d9534f; color:#eee;}
 
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+	color: #789 !important;
+	font-size: 0.6em;
+}
+
+.code {
+	white-space: nowrap;
+}
+
 @media print {
 	details:after{content:"(" attr(data-url) ")";}
 	.footer-links, .site-header, .no-print { display: none;}

@@ -9,7 +9,7 @@ layout: default
   {%- if pdf_file != null -%}
 	<a class="no-print pdf-link" href="{{pdf_path | relative_url}}" target="_blank"><img src="/assets/images/icon-pdf.svg" width="42px" height="42px" alt="PDF"/></a>
 {%- endif -%}
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}{%- if page.tagline -%}<br/><small>{{ page.tagline | escape }}</small>{%- endif -%}</h1>
 	
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">

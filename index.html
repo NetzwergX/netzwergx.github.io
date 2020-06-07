@@ -25,6 +25,7 @@ layout: default
             {{ post.title | escape }}
           </a>
         </h3>
+		{%- if post.tagline -%}<h4>{{ post.tagline | escape }}</h4>{%- endif -%}
         {%- if site.show_excerpts -%}
           {{ post.excerpt }}
         {%- endif -%}
