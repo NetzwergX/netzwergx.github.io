@@ -155,8 +155,8 @@ I'm not so sure. Lets say that we use libraries like ASM to access the underlyin
 trivially easy break copying:
 
 ````java
-public static record DoublingConstructor (int n, int m) implements RecordTransform<Doubling> {
-	public DoublingConstructor {
+public static record Doubling (int n, int m) implements RecordTransform<Doubling> {
+	public Doubling {
 		n = 2 * n;
 		m = 2 * m;
 	}
@@ -170,7 +170,20 @@ are actually quite logical on second glance.
 
 Whats actually more upsetting in my opinnion is that `Record#toString` doesn't use the accessor methods and thus
 displays values you can never get from the record. It will be interesting to see how that plays out with deconstruction
-patterns.
+patterns.  
+If you implement a DoublingRecord like above, what do you expect to happen when you the following?
+
+````java
+	var original = new Doubling(2,3);
+	let Doubling(int m, int n) = original;
+	var copy = Doubling(m, n);
+````
+
+The problems you are facing with a `Record#with` or `Record#copy` method are exactly the same that emerge when talking
+about deconstruction. Whatever solution is chosen for deconstruction will also be applicable for those both methods.
+
+<small>Personally, I'd think this is a non-issue. If someone wants to implement their records that way, let them and
+let them deal with the fallout themselves.</small>
 
 My point is: If I'm able to pull this off, I'm sure the Java architects will find a way to implement
 `Record#with` in a much better way than by using strings to look up values and completely circumventing the type system.
