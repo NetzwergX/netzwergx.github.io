@@ -29,7 +29,7 @@ What do we get? Type saftey. Better, easier to read syntax.
 ## Yes
 
 It turns out, its actually possible to pull this off just as written there. Yes, `Person::name` is an accessor method
-and doesn't allow us to set anything irectly - but we already know how the component of the record is called when we
+and doesn't allow us to *set* anything directly - but we already know how the component of the record is called when we
 look at that -- and we also know the type.
 
 The question is, can we get this information from the lambda? 
