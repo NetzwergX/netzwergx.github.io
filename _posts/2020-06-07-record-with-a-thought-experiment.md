@@ -124,8 +124,8 @@ The first and most obvious drawback: This only works with method references like
 guess. This doesn't work:
 
 ````java
-	var original = new Person("Brian", "Goetz");
-	var copy = original.with(p -> p.firstName(), "Eric"); // nope
+var original = new Person("Brian", "Goetz");
+var copy = original.with(p -> p.firstName(), "Eric"); // nope
 ````
 
 In fact, my current implementation silently ignores this (which is ok for a thought experiment, not so much for
