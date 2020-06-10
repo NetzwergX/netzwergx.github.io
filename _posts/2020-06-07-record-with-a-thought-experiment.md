@@ -1,25 +1,24 @@
 ---
 layout: post
-title: Copying records & changing components - a thought experiment
+title: Record#with - a thought experiment
 date: 2020-06-07 16:22 +0200
 categories: [Java, Project Amber]
 tags: [Records]
 ---
-Recently, there were some interesting discussions about `Record#copy()` and `Record#with` on the `amber-spec-experts`
-mailing list ([1], [2]) which has lead me to implement both methods with a very clear & typesafe way, which I'd like to discuss
-below. The code demonstrated below is available as [Gist].
+Recently, there were some interesting discussions about `Record#copy()` and `Record#with(...)` on the `amber-spec-experts`
+mailing list ([1], [2]) which has lead me to implement both methods with a very clear & typesafe way, which I'd like to 
+discuss below. The code demonstrated below is available as [Gist].
 
-One of the more jarring things to read on the list (no offense intended, all these people are probably a lot smarter
-than me) was this:
+What led me to start this experiment was the following quote:
 
-> the [sic] idea is to add a method `Record with(Object... componentValuePairs)` in `java.lang.Record`, and ask the 
+> the idea is to add a method `Record with(Object... componentValuePairs)` in `java.lang.Record`, and ask the 
 > compiler to verify that the even arguments (0, 2, 4, etc) are constant strings
 > 
 > Proposed syntax:
 >
 > 	var otherPerson = person.with("name", "John", "age", 17);
 
-I thought this *had* to be easier, really. So here is my suggestion:
+I thought this *had* to be easier and be possible in a typesafe way. So here is my suggestion:
 
 	var otherPerson = person.with(Person::name, "John").with(Person::age, 17);
 
@@ -180,7 +179,7 @@ I've cobbled up here.
 
 **Disclaimer**
 
-This is a thought experiment. Do not use this in production. I've not benchmarked it, it uses reflection instead of
+This is a thought experiment. Do not use this in production. I've not benchmarked it, it doesn't use
 `MethodHandle`/`VarHandle` and is probably not suitable en masse.
 
 [Gist]: https://gist.github.com/NetzwergX/4ebba8ea36d0663f2a540d0f71f16e49
