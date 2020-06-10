@@ -120,7 +120,18 @@ var guruCSharp = guruJava.with(Person::name, "Eric Lippert");
 
 ## But with a few drawbacks.
 
-As you can see the method I have presented above has a few commented-out lines.
+The first and most obvious drawback: This only works with method references like `Person::firstName`. Which is fair, I
+guess. This doesn't work:
+
+````java
+	var original = new Person("Brian", "Goetz");
+	var copy = original.with(p -> p.firstName(), "Eric"); // nope
+````
+
+In fact, my current implementation silently ignores this (which is ok for a thought experiment, not so much for
+production code).
+
+Furthermore, the method I have presented above has a few commented-out lines.
 
 ````java
 params[i] = component.getAccessor().invoke(this);
