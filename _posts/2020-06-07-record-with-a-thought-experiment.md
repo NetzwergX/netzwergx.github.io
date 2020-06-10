@@ -168,9 +168,9 @@ If we copy the value of the fields, we still double them every time. And circumv
 constructors, why net let them? Sure, copying then has side-effects that might be surprising on the first glance, but
 are actually quite logical on second glance.
 
-Whats actually more upsetting in my opinnion is that `Record#toString` doesn't use the accessor methods and thus
-displays values you can never get from the record. It will be interesting to see how that plays out with deconstruction
-patterns.  
+Whats actually more upsetting in my opinion is that `Record#toString` doesn't use the accessor methods and thus
+displays values you can never extract from the record. It will be interesting to see how that plays out with 
+deconstruction patterns.  
 If you implement a DoublingRecord like above, what do you expect to happen when you the following?
 
 ````java
