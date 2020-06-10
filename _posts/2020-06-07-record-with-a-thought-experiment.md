@@ -150,8 +150,8 @@ Lets look at an -- arguably contrived -- example:
 
 ````java
 public static record Doubling (int n, int m) implements RecordTransform<Doubling> {
-		public int n() { return 2 * n; }
-		public int m() { return 2 * m; }
+	public int n() { return 2 * n; }
+	public int m() { return 2 * m; }
 }
 
 var original = new Doubling(2, 3); // Doubling[n=2, m=3]
@@ -185,9 +185,9 @@ deconstruction patterns.
 If you implement a DoublingRecord like above, what do you expect to happen when you the following?
 
 ````java
-	var original = new Doubling(2,3);
-	let Doubling(int m, int n) = original;
-	var copy = Doubling(m, n);
+var original = new Doubling(2,3);
+let Doubling(int m, int n) = original;
+var copy = Doubling(m, n);
 ````
 
 The problems you are facing with a `Record#with` or `Record#copy` method are exactly the same that emerge when talking
