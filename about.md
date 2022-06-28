@@ -13,6 +13,12 @@ My name is [*Sebastian*](/legal/), and I am a masters student of computer scienc
 and a *Research Assistant* at Chair V for Programming Systems.  
 Prior to that, I have worked as a freelancer offering coding services in Java & PHP.
 
+My research is focused on creating a left-shift and empowering domain experts to
+solve their problems in an intuitive way by developing DSL and PSLs and. My work
+is currently focused on <i>X-as-Models</i> and <i>executable models</i>, as well as
+structural operational semantics for such models, enabling full-code generation without
+the need to write custom code generators (publications pending).
+
 I like to code interesting things in my spare time, at the moment focusing on DSLs & their type systems as well as
 approaches to create multi-paradigm software by leveraging functional approaches in OOP applications.
 
