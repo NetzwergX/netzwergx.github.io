@@ -20,6 +20,7 @@ GERMANY --- Deutschland
 <small>
 	Diese Daten dürfen nur zur Kontaktaufnahme mit dem Autor dieser Website im Rahmen der Impressumspflicht (§ 5 TMG, § 55 Abs. 2 RStV) verwendet werden.
 </small>
+<br/><br/>
 <small>
 	This data may only be used to contact the author of this website within the scope 
 	of the german *“Impressumpsflicht”* (§ 5 TMG, § 55 Abs. 2 RStV).
