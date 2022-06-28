@@ -18,11 +18,27 @@ GERMANY --- Deutschland
 &#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6E;&#x20;&#x28;&#x64;&#x6F;&#x74;&#x29;&#x20;&#x74;&#x65;&#x75;&#x6D;&#x65;&#x72;&#x74;&#x20;&#x28;&#x61;&#x74;&#x29;&#x20;&#x67;&#x6D;&#x78;&#x20;&#x28;&#x64;&#x6F;&#x74;&#x29;&#x20;&#x64;&#x65;
 
 <small>
+	Diese Daten dürfen nur zur Kontaktaufnahme mit dem Autor dieser Website im Rahmen der Impressumspflicht (§ 5 TMG, § 55 Abs. 2 RStV) verwendet werden.
+</small>
+<small>
 	This data may only be used to contact the author of this website within the scope 
 	of the german *“Impressumpsflicht”* (§ 5 TMG, § 55 Abs. 2 RStV).
 </small>
 
 ## Datenschutzerklärung (DSGVO)
+
+**Verantwortlich im Sinne der DSGVO ist:**
+
+Sebastian Teumert  
+Ulmenweg 10  
+59514 Welver  
+GERMANY --- Deutschland  
+
+**E-Mail:**  
+&#x73;&#x65;&#x62;&#x61;&#x73;&#x74;&#x69;&#x61;&#x6E;&#x20;&#x28;&#x64;&#x6F;&#x74;&#x29;&#x20;&#x74;&#x65;&#x75;&#x6D;&#x65;&#x72;&#x74;&#x20;&#x28;&#x61;&#x74;&#x29;&#x20;&#x67;&#x6D;&#x78;&#x20;&#x28;&#x64;&#x6F;&#x74;&#x29;&#x20;&#x64;&#x65;
+
+### Datenerhebung
+
 Auf dieser Webseite werden keine personenbezogenen Daten erhoben, gespeichert oder verarbeitet. 
 Es werden keine Cookies verwendet.
 
