@@ -52,6 +52,14 @@ $on-laptop:        800px !default;
 
 // custom stuff
 
+dt {
+	font-weight: bolder;
+}
+
+dd {
+	margin-left: 2em;
+}
+
 
 .list-inline {
     list-style: none;
@@ -115,8 +123,8 @@ h4 {
 }
 
 .pdf-link {
-	float:right; 
-	margin-left: 15px; 
+	float:right;
+	margin-left: 15px;
 	margin-top: 4px;
 }
 
@@ -153,14 +161,14 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
 @media print {
 	details:after{content:"(" attr(data-url) ")";}
 	.footer-links, .site-header, .no-print { display: none;}
-	
-	
+
+
 	.highlight {
 		white-space: pre-wrap;
 		word-break: keep-all;
 		page-break-inside: avoid;
 	}
-	
+
 	hr {
 		visibility: hidden;
 		padding: 0;
