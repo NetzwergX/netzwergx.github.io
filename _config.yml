@@ -1,8 +1,8 @@
 title: A coding column.
-description: >- 
+description: >-
   My personal take on coding, software design and programming languages.
-baseurl: "" 
-url: "" 
+baseurl: ""
+url: ""
 #twitter_username: NetzwergX
 github_username:  NetzwergX
 
@@ -41,6 +41,7 @@ show_excerpts: true
 
 header_pages:
 #  - portfolio.html
+  - cv.html
   - about.md
 minima:
   date_format: "%b %-d, %Y"
@@ -56,4 +57,3 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
-

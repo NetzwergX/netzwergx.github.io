@@ -9,9 +9,9 @@ permalink: /about/
 Hello,  
 and thanks for being interested in my blog! I hope you will find some interesting stuff here.
 
-My name is [*Sebastian*](/legal/), and I am a student of computer science at the *Technical University of Dortmund*.
-In the past, I have also have worked as a freelancer offering coding services in Java & PHP 
-(I'm starting my final thesis soon and am focusing on that right now).
+My name is [*Sebastian*](/legal/), and I am a masters student of computer science at the *Technical University of Dortmund*
+and a *Research Assistant* at Chair V for Programming Systems.  
+Prior to that, I have worked as a freelancer offering coding services in Java & PHP.
 
 I like to code interesting things in my spare time, at the moment focusing on DSLs & their type systems as well as
 approaches to create multi-paradigm software by leveraging functional approaches in OOP applications.
@@ -20,7 +20,7 @@ When I'm not coding, I am an avid space exploration enthusiast and probably lear
 the universe today.
 
 I have recently begun this blog as a serious platform to get my thoughts out on some topics, mostly related to
-coding, software -development, -engineering & -design as well as language design and its implications of programs.
+coding, software-development, -engineering & -design as well as language design and its implications of programs.
 
 
 ## On the web
