@@ -11,10 +11,10 @@ and thanks for being interested in my blog! I hope you will find some interestin
 
 My name is [*Sebastian*](/legal/), and I am a masters student of computer science at the *Technical University of Dortmund*
 and a *Research Assistant* at Chair V for Programming Systems.  
-Prior to that, I have worked as a freelancer offering coding services in Java & PHP.
+Prior to that, I have worked as a freelancer offering software development services and consultation in Java & PHP.
 
 My research is focused on creating a left-shift and empowering domain experts to
-solve their problems in an intuitive way by developing DSL and PSLs and. My work
+solve their problems in an intuitive way by developing DSL and PSLs. My work
 is currently focused on <i>X-as-Models</i> and <i>executable models</i>, as well as
 structural operational semantics for such models, enabling full-code generation without
 the need to write custom code generators (publications pending).
