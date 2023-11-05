@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Quo vadis? LLMs for AI-assisted code copilots
-date: 2023-05-11 15:09 +0100
+date: 2023-11-05 15:09 +0100
 categories: [AI]
 tags: [AI, LLM, copilot, research]
 ---
