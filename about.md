@@ -33,6 +33,11 @@ coding, software-development, -engineering & -design as well as language design 
 
 <!--* [Follow me on Twitter](https://twitter.com/NetzwergX)-->
 * [Fork me on GitHub](https://github.com/NetzwergX)
+* [Fork me on GitLab](https://gitlab.com/s.teumert)
+* [Use my ORCID](https://orcid.org/0000-0002-6483-3162)
+* [Read Me on Researchgate](https://www.researchgate.net/profile/Sebastian-Teumert)
+* [Follow me on LinkedIn](https://www.linkedin.com/in/sebastian-teumert/)
+* [Follow me on XING](https://www.xing.com/profile/Sebastian_Teumert)
 
 ## About the blog
 
