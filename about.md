@@ -9,8 +9,7 @@ permalink: /about/
 Hello,  
 and thanks for being interested in my blog! I hope you will find some interesting stuff here.
 
-My name is [*Sebastian*](/legal/), and I am a masters student of computer science at the *Technical University of Dortmund*
-and a *Research Assistant* at Chair V for Programming Systems.  
+My name is [*Sebastian*](/legal/), and I am a PhD candidate in computer science at the University of Limerick, IE. I have completec a bachelors and masters degree at the TU Dortmund University (DE) where I also worked as research assistant at the *Chair V for Programmign Systems*.
 Prior to that, I have worked as a freelancer offering software development services and consultation in Java & PHP.
 
 My research is focused on creating a left-shift and empowering domain experts to
