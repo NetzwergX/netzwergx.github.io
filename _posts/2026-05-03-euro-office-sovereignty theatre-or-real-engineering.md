@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Euro-Office: Sovereignty Theatre or Real Engineering?
+title:  "Euro-Office: Sovereignty Theatre or Real Engineering?"
 date: 2026-05-03 14:02 +0100
 categories: [Open Source]
 tags: [euro-office, sovereignty, data-sovereignty, open-source, office, nextcloud, gdpr, odf, regulation, politics, eu, us]
